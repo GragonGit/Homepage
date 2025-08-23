@@ -1,45 +1,68 @@
 <template>
   <div id="Hero">
     <ul>
-      <li v-for="(item, i) in navItems" :key="i">
+      <li v-for="(item, i) in navItems" :key="i" @mouseover="hovered = item.key"
+        @mouseleave="hovered = DescriptionKey.Default">
         <NuxtLink :to="item.to">
           <p>{{ item.text }}</p>
         </NuxtLink>
       </li>
     </ul>
+    <div id="information">
+      <h3>{{ current.title }}</h3>
+      <p id="description"><span>{{ current.description }}</span></p>
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-const navItems = ref([
-  { text: "Projects", to: "/#Projects" },
-  { text: "Games", to: "/#Games" },
-  { text: "About", to: "/#About" },
-  { text: "Blog", to: "/#Blog" },
-])
+import type { Description } from "./descriptions";
+import { DescriptionKey, descriptions } from "./descriptions";
+
+type NavItem = {
+  key: DescriptionKey
+  text: string
+  to: string
+}
+
+const navItems: NavItem[] = [
+  { key: DescriptionKey.Projects, text: 'Projects', to: '/#Projects' },
+  { key: DescriptionKey.Games, text: 'Games', to: '/#Games' },
+  { key: DescriptionKey.About, text: 'About', to: '/#About' },
+  { key: DescriptionKey.Blog, text: 'Blog', to: '/#Blog' },
+]
+
+const hovered = ref<DescriptionKey>(DescriptionKey.Default)
+
+const current = computed<Description>(() => {
+  return descriptions[hovered.value]
+})
 </script>
 
 <style lang="sass" scoped>
 #Hero
-  --gradient-percent: 55%
+  --split: 50%
 
+  display: grid
+  grid-template-columns: var(--split) calc(100% - var(--split))
   height: 100svh
-  padding-top: 5rem
-  background: linear-gradient(102.5deg, var(--primary) var(--gradient-percent), var(--tertiary) var(--gradient-percent));
+  background: linear-gradient(102.5deg, transparent var(--split), var(--tertiary) var(--split));
 
 ul
   --element-width: 20rem
   --element-padding: 1rem
 
-  margin-top: 7rem
+  margin-top: 5rem
   display: flex
   flex-direction: column
   gap: 2rem
   list-style-type: none
   padding: 0
-  transform: skewX(-12.5deg)
-  margin-left: calc(var(--gradient-percent) - var(--element-width) - 2 * var(--element-padding) - 5rem)
   width: fit-content
+  transform: skewX(-12.5deg)
+  justify-self: end
+  align-self: center
+  margin-right: 3rem
 
 li
   display: grid
@@ -69,4 +92,25 @@ a
     margin: 0
     transition: transform 100ms linear
     transform: skewX(12.5deg)
+
+#information
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  gap: 1rem
+  padding-top: 0.5rem
+  padding-bottom: 2rem
+  transform: skewX(-12.5deg)
+
+  & > *
+    background-color: var(--secondary)
+    color: var(--primary)
+    padding: 1rem 2rem
+    width: fit-content
+    margin-left: 2rem
+
+    & > *
+      display: block
+      text-wrap: auto
+      transform: skewX(12.5deg)
 </style>
