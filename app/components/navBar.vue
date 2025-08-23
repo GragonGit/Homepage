@@ -1,9 +1,9 @@
 <template>
   <nav ref="navRef">
-      <button @click="isOpen = !isOpen">
-        <Icon name="material-symbols:menu" />
-      </button>
-      <Transition name="slide">
+    <button @click="isOpen = !isOpen">
+      <Icon name="material-symbols:menu" />
+    </button>
+    <Transition name="slide">
       <ul v-if="isOpen">
         <li v-for="(item, i) in navItems" :key="i">
           <NuxtLink :to="item.to" @click="closeMenu">
@@ -11,8 +11,8 @@
           </NuxtLink>
         </li>
       </ul>
-      </Transition>
-    </nav>
+    </Transition>
+  </nav>
 </template>
 
 <script lang="ts" setup>
@@ -59,6 +59,7 @@ nav
   position: fixed
   gap: 1rem
   height: 3rem
+  margin: 0.5rem 1rem
   overflow: clip
   transform: skewX(-12.5deg)
 
@@ -66,7 +67,7 @@ nav
     display: grid
     justify-items: center
     align-items: center
-    background-color: black
+    background-color: var(--secondary)
     aspect-ratio: 1
     border: none
     z-index: 999
@@ -80,20 +81,20 @@ ul
   list-style-type: none
   padding: 0
   margin: 0
-  background-color: black
+  background-color: var(--secondary)
 
 li
   display: grid
   position: relative
   align-content: center 
-  background-color: black
+  background-color: var(--secondary)
 
   &::after
     content: ''
     position: absolute
     width: 100%
     height: 0.25rem
-    background-color: red
+    background-color: var(--tertiary)
     bottom: -0.25rem
     transition: bottom 100ms linear
 
@@ -106,7 +107,7 @@ li
 
 a
   display: block
-  color: white
+  color: var(--primary)
   text-decoration: none
   padding: 1rem
   outline: none
@@ -117,7 +118,7 @@ a
     transform: skewX(12.5deg)
 
 .iconify
-  color: white
+  color: var(--primary)
   font-size: 2rem
 
 .slide-enter-active, .slide-leave-active

@@ -22,8 +22,8 @@
 <script lang="ts" setup>
 const navItems = ref([
   { text: "Home", to: "/" },
-  { text: "Games", to: "/#Games" },
   { text: "Projects", to: "/#Projects" },
+  { text: "Games", to: "/#Games" },
   { text: "About", to: "/#About" },
   { text: "Blog", to: "/#Blog" },
 ])
