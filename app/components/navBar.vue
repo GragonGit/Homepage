@@ -60,7 +60,6 @@ nav
   gap: 1rem
   height: 3rem
   margin: 0.5rem 1rem
-  overflow: clip
   transform: skewX(-12.5deg)
 
   &>button
@@ -70,6 +69,7 @@ nav
     background-color: var(--secondary)
     aspect-ratio: 1
     border: none
+    box-shadow: 5px 5px 20px 0
     z-index: 999
 
     &:hover, &:focus-visible
@@ -84,18 +84,22 @@ ul
   background-color: var(--secondary)
 
 li
+  --highlight-bar-height: 0.25rem
+
   display: grid
   position: relative
   align-content: center 
   background-color: var(--secondary)
+  box-shadow: var(--shadow) var(--secondary)
+  overflow: clip
 
   &::after
     content: ''
     position: absolute
     width: 100%
-    height: 0.25rem
+    height: var(--highlight-bar-height)
     background-color: var(--tertiary)
-    bottom: -0.25rem
+    bottom: calc(var(--highlight-bar-height) * -1)
     transition: bottom 100ms linear
 
   &:hover, &:focus-within
@@ -103,7 +107,7 @@ li
       bottom: 0
     
     &>*>p
-      transform: translateY(-0.25rem) skewX(12.5deg)
+      transform: translateY(calc(var(--highlight-bar-height) * -1)) skewX(12.5deg)
 
 a
   display: block

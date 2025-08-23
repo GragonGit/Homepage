@@ -57,11 +57,13 @@ li
   align-content: center 
   background-color: var(--secondary)
   width: fit-content
-  transition: transform 100ms linear, background-color 100ms linear
+  transition: transform 100ms linear, background-color 100ms linear, box-shadow 100ms linear
+  box-shadow: var(--shadow) var(--secondary)
 
   &:hover
     background-color: var(--tertiary)
     transform: translateX(-2rem)
+    box-shadow: var(--shadow) var(--tertiary)
 
 a
   justify-items: center
