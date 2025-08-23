@@ -1,5 +1,7 @@
 <template>
-  <NuxtPage />
+  <h1 id="Projects">
+    Projects
+  </h1>
 </template>
 
 <script lang="ts" setup>
