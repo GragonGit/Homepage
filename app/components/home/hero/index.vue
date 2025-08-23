@@ -46,7 +46,7 @@ const current = computed<Description>(() => {
   display: grid
   grid-template-columns: var(--split) calc(100% - var(--split))
   height: 100svh
-  background: linear-gradient(102.5deg, transparent var(--split), var(--tertiary) var(--split));
+  background: linear-gradient(calc( 90deg + var(--skew) ), transparent var(--split), var(--tertiary) var(--split));
 
 ul
   --element-width: 20rem
@@ -59,7 +59,7 @@ ul
   list-style-type: none
   padding: 0
   width: fit-content
-  transform: skewX(-12.5deg)
+  transform: skewX(calc(-1 * var(--skew)))
   justify-self: end
   align-self: center
   margin-right: 3rem
@@ -91,7 +91,7 @@ a
   &>p
     margin: 0
     transition: transform 100ms linear
-    transform: skewX(12.5deg)
+    transform: skewX(var(--skew))
 
 #information
   display: flex
@@ -100,7 +100,7 @@ a
   gap: 1rem
   padding-top: 0.5rem
   padding-bottom: 2rem
-  transform: skewX(-12.5deg)
+  transform: skewX(calc(-1 * var(--skew)))
 
   & > *
     background-color: var(--secondary)
@@ -112,5 +112,5 @@ a
     & > *
       display: block
       text-wrap: auto
-      transform: skewX(12.5deg)
+      transform: skewX(var(--skew))
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar :nav-items="navItems" />
+    <NavBar id="navbar" :nav-items="navItems" />
     <section>
       <HomeHero />
     </section>
@@ -30,5 +30,6 @@ const navItems = ref([
 </script>
 
 <style lang="sass" scoped>
-
+#navbar
+  z-index: 99999
 </style>

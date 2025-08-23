@@ -60,7 +60,7 @@ nav
   gap: 1rem
   height: 3rem
   margin: 0.5rem 1rem
-  transform: skewX(-12.5deg)
+  transform: skewX(calc(-1 * var(--skew)))
 
   &>button
     display: grid
@@ -107,7 +107,7 @@ li
       bottom: 0
     
     &>*>p
-      transform: translateY(calc(var(--highlight-bar-height) * -1)) skewX(12.5deg)
+      transform: translateY(calc(var(--highlight-bar-height) * -1)) skewX(var(--skew))
 
 a
   display: block
@@ -120,7 +120,7 @@ a
     margin: 0
     font-size: 1.5rem
     transition: transform 100ms linear
-    transform: skewX(12.5deg)
+    transform: skewX(var(--skew))
 
 .iconify
   color: var(--primary)
