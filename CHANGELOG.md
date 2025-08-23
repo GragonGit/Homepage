@@ -6,6 +6,12 @@ Welcome to the Changelog. The versioning works as follows:
 
 Changes in the repository not influencing the actual application e.g. Issue Templates do not require a version change.
 
+## 0.2.0 - Hero Section
+- Created Hero Section
+- Added Electrolize font – https://fonts.google.com/specimen/Electrolize
+
+Created the basic hero section for the homepage. More stuff will come but this will should do for the time being. Added the Electrolize font because it looks cool.
+
 ## 0.1.0 - Setup Homepage
 - Initialised Homepage
 - Added @nuxt/eslint – https://nuxt.com/modules/eslint
