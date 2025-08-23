@@ -118,6 +118,7 @@ a
 
   &>p
     margin: 0
+    font-size: 1.5rem
     transition: transform 100ms linear
     transform: skewX(12.5deg)
 
