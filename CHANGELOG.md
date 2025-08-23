@@ -9,6 +9,7 @@ Changes in the repository not influencing the actual application e.g. Issue Temp
 ## 0.2.0 - Hero Section
 - Created Hero Section
 - Added Electrolize font – https://fonts.google.com/specimen/Electrolize
+- Updated dependencies
 
 Created the basic hero section for the homepage. More stuff will come but this will should do for the time being. Added the Electrolize font because it looks cool.
 
