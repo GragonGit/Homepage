@@ -1,24 +1,9 @@
 <template>
   <div id="Hero">
     <ul>
-      <li>
-        <NuxtLink to="/#Projects">
-          <p>Projects</p>
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/#Games">
-          <p>Games</p>
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/#About">
-          <p>About</p>
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/#Blog">
-          <p>Blog</p>
+      <li v-for="(item, i) in navItems" :key="i">
+        <NuxtLink :to="item.to">
+          <p>{{ item.text }}</p>
         </NuxtLink>
       </li>
     </ul>
@@ -26,7 +11,12 @@
 </template>
 
 <script lang="ts" setup>
-
+const navItems = ref([
+  { text: "Projects", to: "/#Projects" },
+  { text: "Games", to: "/#Games" },
+  { text: "About", to: "/#About" },
+  { text: "Blog", to: "/#Blog" },
+])
 </script>
 
 <style lang="sass" scoped>
@@ -60,7 +50,7 @@ li
   transition: transform 100ms linear, background-color 100ms linear, box-shadow 100ms linear
   box-shadow: var(--shadow) var(--secondary)
 
-  &:hover
+  &:hover, &:focus-within
     background-color: var(--tertiary)
     transform: translateX(-2rem)
     box-shadow: var(--shadow) var(--tertiary)

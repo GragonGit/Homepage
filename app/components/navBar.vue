@@ -73,7 +73,7 @@ nav
     z-index: 999
 
     &:hover, &:focus-visible
-      box-shadow: inset 0 0 0 2px black, inset 0 0 0 4px white
+      box-shadow: inset 0 0 0 2px black, inset 0 0 0 4px white, var(--shadow) var(--secondary)
 
 ul
   display: flex
