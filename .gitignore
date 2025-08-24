@@ -26,3 +26,8 @@ logs
 # IDE
 .vscode/
 .idea/
+
+# Just ignore it
+IGNORE*
+
+public/images/

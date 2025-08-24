@@ -9,8 +9,14 @@
       </li>
     </ul>
     <div id="information">
-      <h3>{{ current.title }}</h3>
-      <p id="description"><span>{{ current.description }}</span></p>
+      <div />
+      <div id="imageContainer">
+        <NuxtImg id="image" :src="current.imageUrl" />
+      </div>
+      <div id="text">
+        <h3>{{ current.title }}</h3>
+        <p id="description"><span>{{ current.description }}</span></p>
+      </div>
     </div>
   </div>
 </template>
@@ -96,21 +102,40 @@ a
 #information
   display: flex
   flex-direction: column
-  justify-content: flex-end
+  justify-content: space-between
   gap: 1rem
   padding-top: 0.5rem
   padding-bottom: 2rem
   transform: skewX(calc(-1 * var(--skew)))
+  margin-left: 2rem
+
+#text
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  gap: 1rem
 
   & > *
     background-color: var(--secondary)
     color: var(--primary)
     padding: 1rem 2rem
     width: fit-content
-    margin-left: 2rem
 
     & > *
       display: block
       text-wrap: auto
       transform: skewX(var(--skew))
+
+#imageContainer
+  aspect-ratio: 16 / 9
+  overflow: hidden
+  background-color: var(--secondary)
+  margin-right: 5rem
+  border: black solid 1rem
+  display: grid
+  place-items: center
+
+#image
+  width: 120%
+  transform: skewX(var(--skew))
 </style>
