@@ -11,6 +11,7 @@ Changes in the repository not influencing the actual application e.g. Issue Temp
 - Added @nuxt/eslint – https://nuxt.com/modules/eslint
 - Added @nuxt/icon – https://nuxt.com/modules/icon
 - Added @nuxt/image – https://nuxt.com/modules/image
+- Added @nuxt/content – https://nuxt.com/modules/content
 
 It's the glorious project setup.
 
