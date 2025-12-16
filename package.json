@@ -10,15 +10,15 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/eslint": "^1.9.0",
-    "@nuxt/icon": "^2.0.0",
-    "@nuxt/image": "^1.11.0",
-    "eslint": "^9.33.0",
-    "nuxt": "^4.0.3",
-    "vue": "^3.5.18",
-    "vue-router": "^4.5.1"
+    "@nuxt/eslint": "^1.12.1",
+    "@nuxt/icon": "^2.1.1",
+    "@nuxt/image": "^2.0.0",
+    "eslint": "^9.39.2",
+    "nuxt": "^4.2.2",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "sass": "^1.90.0"
+    "sass": "^1.97.0"
   }
 }
