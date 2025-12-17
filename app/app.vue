@@ -11,8 +11,8 @@ main
   > *
     padding: 1rem
 
-    border-radius: 5rem
-    corner-shape: squircle
+    border-radius: 1rem
+    corner-shape: round
 
     background-color: var(--background)
 </style>
