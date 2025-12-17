@@ -1,15 +1,10 @@
 @use '../font/electrolize'
   
 :root
-  --accent: #c80000
+  --accent: #fc2727
   --background: #000
-  --text: #fefefe
-  --h1: #c80000
-  --h2: #c86400
-  --h3: #c8bb00
-  --h4: #3fc800
-  --h5: #008cc8
-  --h6: #8f00c8
+  --heading: #c2ff8c
+  --text: #eee
 
   color: var(--text)
   background-color: var(--accent)
@@ -22,21 +17,16 @@ p, h1, h2, h3, h4, h5, h6
   text-wrap: balance
   margin: 1rem
 
+h1
+  font-weight: 800
+  color: var(--accent)
+
 h2, h3
+  font-weight: 800
+  color: var(--heading)
   margin-top: 1.5rem
 
 h4, h5, h6
+  font-weight: 600
+  color: var(--heading)
   margin-top: 1.3rem
-
-h1
-  color: var(--h1)
-h2
-  color: var(--h2)
-h3
-  color: var(--h3)
-h4
-  color: var(--h4)
-h5
-  color: var(--h5)
-h6
-  color: var(--h6)
