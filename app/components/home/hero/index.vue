@@ -1,14 +1,17 @@
 <template>
-  <div id="Hero">
-    <ul>
-      <li v-for="(item, i) in navItems" :key="i" @mouseover="hovered = item.key"
-        @mouseleave="hovered = DescriptionKey.Default">
-        <NuxtLink :to="item.to">
-          <p>{{ item.text }}</p>
-        </NuxtLink>
-      </li>
-    </ul>
-    <div id="information">
+<div class="Hero">
+  <ul>
+    <!-- <li v-for="(item, i) in navItems" :key="i"
+        @mouseover="hovered = item.key"
+        @mouseleave="hovered = DescriptionKey.Default"
+        > -->
+    <li v-for="(item, i) in navItems" :key="i">
+      <NuxtLink :to="item.to">
+        <p>{{ item.text }}</p>
+      </NuxtLink>
+    </li>
+  </ul>
+  <!-- <div id="information">
       <div />
       <div id="imageContainer">
         <NuxtImg id="image" :src="current.imageUrl" />
@@ -17,13 +20,13 @@
         <h3>{{ current.title }}</h3>
         <p id="description"><span>{{ current.description }}</span></p>
       </div>
-    </div>
-  </div>
+    </div> -->
+</div>
 </template>
 
 <script lang="ts" setup>
-import type { Description } from "./descriptions";
-import { DescriptionKey, descriptions } from "./descriptions";
+// import type { Description } from "./descriptions";
+import { DescriptionKey } from "./descriptions";
 
 type NavItem = {
   key: DescriptionKey
@@ -38,104 +41,106 @@ const navItems: NavItem[] = [
   { key: DescriptionKey.Blog, text: 'Blog', to: '/#Blog' },
 ]
 
-const hovered = ref<DescriptionKey>(DescriptionKey.Default)
+// const hovered = ref<DescriptionKey>(DescriptionKey.Default)
 
-const current = computed<Description>(() => {
-  return descriptions[hovered.value]
-})
+// const current = computed<Description>(() => {
+//   return descriptions[hovered.value]
+// })
 </script>
 
 <style lang="sass" scoped>
-#Hero
+.Hero
   --split: 50%
 
   display: grid
-  grid-template-columns: var(--split) calc(100% - var(--split))
+  //grid-template-columns: var(--split) calc(100% - var(--split))
   height: 100svh
-  background: linear-gradient(calc( 90deg + var(--skew) ), transparent var(--split), var(--tertiary) var(--split));
+  background: linear-gradient(calc( 90deg), transparent var(--split), c.$tertiary var(--split));
 
 ul
-  --element-width: 20rem
-  --element-padding: 1rem
+  list-style-type: none
 
-  margin-top: 5rem
   display: flex
   flex-direction: column
-  gap: 2rem
-  list-style-type: none
-  padding: 0
-  width: fit-content
-  transform: skewX(calc(-1 * var(--skew)))
-  justify-self: end
+  justify-self: center
   align-self: center
-  margin-right: 3rem
+
+  width: clamp(5rem, 70vw, 20rem)
+  gap: 2rem
+  padding: 0
+  margin: 0
+
+  @media (min-width: breakpoints.$sm)
+    transform: skewX(calc(-1 * m.$skew))
+
+
 
 li
-  display: grid
-  position: relative
-  align-content: center 
-  background-color: var(--secondary)
-  width: fit-content
   transition: transform 100ms linear, background-color 100ms linear, box-shadow 100ms linear
-  box-shadow: var(--shadow) var(--secondary)
 
-  &:hover, &:focus-within
-    background-color: var(--tertiary)
-    transform: translateX(-2rem)
-    box-shadow: var(--shadow) var(--tertiary)
-
+  background-color: c.$secondary
+  box-shadow: m.$shadow c.$secondary
+  transform: skewX(calc(-1 * m.$skew))
+//
+//  &:hover, &:focus-within
+//    background-color: c.$tertiary
+//    transform: translateX(-2rem)
+//    box-shadow: m.$shadow c.$tertiary
+//
 a
-  justify-items: center
   display: block
-  color: var(--primary)
-  text-decoration: none
-  padding: 1rem
-  width: var(--element-width)
+  justify-items: center
   outline: none
-  font-size: 2.5rem
+
+  padding: 1rem
+
+  color: c.$primary
+
+  text-decoration: none
 
   &>p
+    font-size: clamp(1rem, 10vw, 2.5rem)
     margin: 0
     transition: transform 100ms linear
-    transform: skewX(var(--skew))
+    transform: skewX(m.$skew)
 
-#information
-  display: flex
-  flex-direction: column
-  justify-content: space-between
-  gap: 1rem
-  padding-top: 0.5rem
-  padding-bottom: 2rem
-  transform: skewX(calc(-1 * var(--skew)))
-  margin-left: 2rem
-
-#text
-  display: flex
-  flex-direction: column
-  justify-content: flex-end
-  gap: 1rem
-
-  & > *
-    background-color: var(--secondary)
-    color: var(--primary)
-    padding: 1rem 2rem
-    width: fit-content
-
-    & > *
-      display: block
-      text-wrap: auto
-      transform: skewX(var(--skew))
-
-#imageContainer
-  aspect-ratio: 16 / 9
-  overflow: hidden
-  background-color: var(--secondary)
-  margin-right: 5rem
-  border: black solid 1rem
-  display: grid
-  place-items: center
-
-#image
-  width: 120%
-  transform: skewX(var(--skew))
+//#information
+//  display: flex
+//  flex-direction: column
+//  justify-content: space-between
+//  gap: 1rem
+//  padding-top: 0.5rem
+//  padding-bottom: 2rem
+//  transform: skewX(calc(-1 * m.$skew))
+//  margin-left: 2rem
+//
+//#text
+//  display: flex
+//  flex-direction: column
+//  justify-content: flex-end
+//  gap: 1rem
+//
+//  & > *
+//    background-color: c.$secondary
+//    color: c.$primary
+//    padding: 1rem 2rem
+//    width: fit-content
+//
+//    & > *
+//      display: block
+//      text-wrap: auto
+//      transform: skewX(m.$skew)
+//
+//#imageContainer
+//  aspect-ratio: 16 / 9
+//  overflow: hidden
+//  background-color: c.$secondary
+//  margin-right: 5rem
+//  border: black solid 1rem
+//  display: grid
+//  place-items: center
+//
+//#image
+//  width: 120%
+//  transform: skewX(m.$skew)
 </style>
