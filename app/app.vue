@@ -21,7 +21,7 @@ main
     position: fixed
     inset: -10px
     
-    border: 30px solid var(--root-bg)
+    border: 30px solid var(--accent)
     border-radius: 3rem
     
     z-index: 9999
