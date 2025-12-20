@@ -17,7 +17,7 @@ main
     
     inset: -30px
     border: 50px solid transparent
-    border-radius: 4rem
+    border-radius: 5rem
 
     background: linear-gradient(to bottom, var(--accent-gradient)) border-box
     /* This masks out the center area defined by the padding-box */
