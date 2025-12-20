@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="layout">
-      <SideNav />
+      <!-- <SideNav /> -->
       <NuxtPage />
     </div>
   </main>
@@ -30,20 +30,4 @@ main
     z-index: 9999
     pointer-events: none
 
-.layout
-  --min-sidebar-width: 10rem
-  --max-sidebar-width: 15rem
-  --grid-gap: 2rem
-
-  display: grid
-  grid-template-columns: minmax(var(--min-sidebar-width), var(--max-sidebar-width)) 1fr
-  gap: clamp(0dvw, 2dvw, var(--grid-gap))
-
-  @media (max-width: 600px)
-    grid-template-columns: 1fr
-    gap: 0
-  
-  > :last-child
-    justify-self: center
-    width: clamp(0ch, 100%, 70ch)
 </style>
