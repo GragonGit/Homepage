@@ -1,11 +1,11 @@
 @use '../fonts/index'
   
 :root
+  --background: #000
+  --text: #eee
   --accent: #fc2727
   --accent-gradient: var(--accent), color-mix(in srgb, var(--accent), black 40%)
-  --background: #000
-  --heading: #c2ff8c
-  --text: #eee
+  --secondary: #c2ff8c
 
   color: var(--text)
   background-color: var(--background)
@@ -21,18 +21,19 @@ body
 
 p, h1, h2, h3, h4, h5, h6
   // text-wrap: balance
+  font-weight: 400
   margin: 1rem
 
 h1
-  font-weight: 900
-  color: var(--accent)
+  font-weight: 700
+  text-decoration: underline
 
-h2, h3
-  font-weight: 800
-  color: var(--heading)
+h2
+  font-weight: 650
+  color: var(--accent)
   margin-top: 1.5rem
 
-h4, h5, h6
+h3, h4, h5, h6
   font-weight: 600
-  color: var(--heading)
+  color: var(--secondary)
   margin-top: 1.3rem
