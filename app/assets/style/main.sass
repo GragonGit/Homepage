@@ -1,4 +1,4 @@
-@use '../font/electrolize'
+@use '../fonts/index'
   
 :root
   --accent: #fc2727
@@ -9,7 +9,12 @@
 
   color: var(--text)
   background-color: var(--background)
-  font-family: Electrolize, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+  font-family: 'Atkinson Hyperlegible Mono', Inter, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  line-height: 1.6
+  word-spacing: -0.2em
 
 body
   margin: 0

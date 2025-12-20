@@ -9,7 +9,7 @@ const { data: home } = await useAsyncData(() => queryCollection('content').path(
 <style scoped lang="sass">
 .content
   --padding-width: 3rem
-  --max-content-width: 50ch
+  --max-content-width: 60ch
 
   margin: 0 clamp(0rem, 50dvw, (100% - var(--max-content-width)) / 2)
 </style>
