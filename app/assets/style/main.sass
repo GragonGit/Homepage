@@ -3,9 +3,12 @@
 :root
   --background: #000
   --text: #eee
-  --accent: #fc2727
-  --accent-gradient: var(--accent), color-mix(in srgb, var(--accent), black 40%)
-  --secondary: #c2ff8c
+  --accent: #46afdd
+  --secondary: #fd9e64
+  --strong: #ff4545
+  --italic: #94ff8a
+  
+  --accent-gradient: color-mix(in srgb, var(--accent), white 5%), color-mix(in srgb, var(--accent), black 20%)
 
   color: var(--text)
   background-color: var(--background)
@@ -28,9 +31,13 @@ a
   font-weight: 500
   color: var(--text)
 
+  &:hover
+    font-weight: 700
+
 h1
   font-weight: 700
   text-decoration: underline
+  font-size: 2.5rem
 
 h2
   font-weight: 650
@@ -41,3 +48,9 @@ h3, h4, h5, h6
   font-weight: 600
   color: var(--secondary)
   margin-top: 1.3rem
+
+strong
+  color: var(--strong)
+
+em
+  color: var(--italic)
