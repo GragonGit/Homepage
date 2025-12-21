@@ -4,6 +4,10 @@
       <!-- <SideNav /> -->
       <NuxtPage />
     </div>
+    <footer class="imprint">
+      Made by Tristan | {{ new Date().getFullYear() }}
+      <a href="https://gragongit.github.io/Alles-nach-hier/">Imprint</a>
+    </footer>
   </main>
 </template>
 
@@ -27,5 +31,13 @@ main
     
     z-index: 9999
     pointer-events: none
+
+.imprint
+  display: flex
+  justify-content: space-between
+
+  margin: 15rem 1rem 0.5rem 1rem
+
+  font-size: 0.7rem
 
 </style>
