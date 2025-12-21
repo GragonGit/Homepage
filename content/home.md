@@ -1,40 +1,27 @@
-# Hi there, Tristan here! 👋
+# Hi there, Tristan here!
 
-I'm a Software Engineer from Germany focusing on **Web Development** and **Games**.
+I'm a Software Engineer from Germany focusing on **Web Development** and **Games**. I'm currently working on my masters degree and am always looking for new challenges something new to learn.
 
 ## Projects
-Description
+Here are some of my recent projects I finished or work on in my free time.
 
-### Map Generator
-Description
+### RPG Map Generator
+A tool written in Java that takes a small scale image of a map and scales it up using Wave Function Collapse into a high resolution map with great detail.
 
-Technologies: Java
-
-Repository Link
-
-### Homepage
-Description
+*Screenshots*
 
 Technologies: Java
 
-Repository Link
+[Repository](https://github.com/GragonGit)
 
-More Projects ➡
 ### Overtruck
-Description
+A roguelike, platformer where you jump over trucks which drive over bumpy procedurally generated terrain trying to reach a finish line which increases its distance with every success.
 
-Technologies: Java
+*Screenshots*
 
-Repository Link
+Technologies: C#, Unity
 
-### Dogfight
-Description
-
-Technologies: Java
-
-Repository Link
-
-More Games ➡
+[Repository](https://github.com/GragonGit)
 
 ## Skills
 - Categorize your skills to show your versatility
