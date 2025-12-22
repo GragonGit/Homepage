@@ -28,7 +28,7 @@ My bachelor thesis about creating a framework intended to make the development o
 
 The full title of my thesis is called:
 
-*Conception and Development of a Framework for a Roguelike Weapon System with Item Synergies*
+> *Conception and Development of a Framework for a Roguelike Weapon System with Item Synergies*
 
 *Screenshots*
 
