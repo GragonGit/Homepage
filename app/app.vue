@@ -46,7 +46,7 @@ main
     border: 50px solid transparent
     border-radius: 5rem
 
-    background: linear-gradient(black, black) padding-box, linear-gradient(to bottom, var(--accent-gradient)) border-box
+    background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(to bottom, var(--accent-gradient)) border-box
     background-size: 100% 200%
 
     filter: blur(1rem)
