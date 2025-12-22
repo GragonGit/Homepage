@@ -40,21 +40,51 @@ Technologies: C#, Unity
 During my university studies I developed a broad range of skills and still continue to learn something new every day.
 
 ### Web Development
-- Vue/Nuxt
-- Angular
-- HTML | JS/TS | CSS/SASS
+- HTML | JS/TS | CSS/SCSS
+- Vue | Nuxt | Angular
 - TailwindCSS
 
 ### Game Development
-- Unity
-- Godot
-- C#
-- Java
+- Unity | Godot
+- C# | Java
 - Blender
 
+### Other Skills & Certifications
+- Google Cloud: [Associate Cloud Engineer Certification](https://www.credly.com/badges/c5135c27-a7a0-4c55-a3d0-8c6940aa1092/public_url)
+- Terraform
+
+### Languages
+- German *(Native)*
+- English *(C1)*
+
 ## Experience & Education
-- Resume Download: A clear button to a PDF version.
-- Work History: Focus on outcomes. Use the formula: "Accomplished [X] as measured by [Y], by doing [Z]."
+My CV split into work and education.
+
+### Experience
+
+#### Senacor Technologies AG
+Software Development | Internship & Working Student
+- September 2023 - September 2024
+
+#### Heilbronn University of Applied Sciences
+Tutor for International Exchange | Student Assistant
+- March 2022 - August 2023
+
+### Education
+
+#### Heilbronn University of Applied Sciences
+M. Sc. Software Engineering | since September 2025
+
+B. Sc. Software Engineering | September 2021 - August 2025
+
+- GPA: 4.0
+- Bachelor Thesis Grade: 4.0 | [Read More]() *(Coming Soon)*
+
+#### Eikei University of Hiroshima | 叡啓大学
+Social System Design | October 2024 - March 2025
+
+- GPA: 4.0
+- Student Exchange
 
 ## Blog
 Like every semi-experienced software developer do I have some opinions on a lot of topics. This and more about my projects, ideas and whatever I feel like writing about can be found here.
@@ -63,14 +93,17 @@ Like every semi-experienced software developer do I have some opinions on a lot 
 *Introduction...*
 
 [Read more]() *(Coming Soon)*
+
 ### Tailwind is just bloatware
 *Introduction...*
 
 [Read more]() *(Coming Soon)*
+
 ### How to make your website change theme without beyond light and darkmode
 *Introduction...*
 
 [Read more]() *(Coming Soon)*
 
 ## Contact
-- Links: GitHub, LinkedIn, and maybe a specialized site like Itch.io if you have game jams.
+You can find me here:
+- [GitHub](https://github.com/GragonGit)
