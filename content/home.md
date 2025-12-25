@@ -1,6 +1,57 @@
 # Hi there! I'm Tristan.
 
-I'm a Software Engineer from Germany focusing on **Web Development** and **Games**. I'm currently working on my masters degree and am always looking for new challenges and something new to learn.
+I'm a **Software Engineer** from Germany focusing on **Web Development** and **Games**. I'm currently working on my masters degree and am always looking for new challenges and something new to learn.
+
+You can find me on [GitHub](https://github.com/GragonGit) and [LinkedIn](www.linkedin.com/in/tristan-nußbaum).
+
+## Experience & Education
+
+### Experience
+
+#### Senacor Technologies AG
+Software Development | Internship & Working Student
+- September 2023 - September 2024
+
+#### Heilbronn University of Applied Sciences
+Tutor for International Exchange | Student Assistant
+- March 2022 - August 2023
+
+### Education
+
+#### Heilbronn University of Applied Sciences
+M. Sc. Software Engineering | since September 2025
+
+B. Sc. Software Engineering | September 2021 - August 2025
+
+- GPA: 4.0
+- Bachelor Thesis Grade: 4.0 | [Read More]() *(Coming Soon)*
+
+#### Eikei University of Hiroshima | 叡啓大学
+Social System Design | October 2024 - March 2025
+
+- GPA: 4.0
+- Student Exchange
+
+## Skills
+During my university studies I developed a broad range of skills and still continue to learn something new every day.
+
+### Web Development
+- HTML | JS/TS | CSS/SCSS
+- Vue | Nuxt | Angular
+- TailwindCSS
+
+### Game Development
+- Unity | Godot
+- C# | Java
+- Blender
+
+### Other Skills & Certifications
+- Google Cloud: [Associate Cloud Engineer Certification](https://www.credly.com/badges/c5135c27-a7a0-4c55-a3d0-8c6940aa1092/public_url)
+- Terraform
+
+### Languages
+- German *(Native)*
+- English *(C1)*
 
 ## Projects
 Here are some of my recent projects I finished or work on in my free time. For a full list of projects click [here]() *(Coming Soon)*.
@@ -36,56 +87,6 @@ Technologies: C#, Unity
 
 [Learn More]() *(Coming Soon)*
 
-## Skills
-During my university studies I developed a broad range of skills and still continue to learn something new every day.
-
-### Web Development
-- HTML | JS/TS | CSS/SCSS
-- Vue | Nuxt | Angular
-- TailwindCSS
-
-### Game Development
-- Unity | Godot
-- C# | Java
-- Blender
-
-### Other Skills & Certifications
-- Google Cloud: [Associate Cloud Engineer Certification](https://www.credly.com/badges/c5135c27-a7a0-4c55-a3d0-8c6940aa1092/public_url)
-- Terraform
-
-### Languages
-- German *(Native)*
-- English *(C1)*
-
-## Experience & Education
-My CV split into work and education.
-
-### Experience
-
-#### Senacor Technologies AG
-Software Development | Internship & Working Student
-- September 2023 - September 2024
-
-#### Heilbronn University of Applied Sciences
-Tutor for International Exchange | Student Assistant
-- March 2022 - August 2023
-
-### Education
-
-#### Heilbronn University of Applied Sciences
-M. Sc. Software Engineering | since September 2025
-
-B. Sc. Software Engineering | September 2021 - August 2025
-
-- GPA: 4.0
-- Bachelor Thesis Grade: 4.0 | [Read More]() *(Coming Soon)*
-
-#### Eikei University of Hiroshima | 叡啓大学
-Social System Design | October 2024 - March 2025
-
-- GPA: 4.0
-- Student Exchange
-
 ## Blog
 Like every semi-experienced software developer do I have some opinions on a lot of topics. This and more about my projects, ideas and whatever I feel like writing about can be found here.
 
@@ -104,6 +105,5 @@ Like every semi-experienced software developer do I have some opinions on a lot 
 
 [Read more]() *(Coming Soon)*
 
-## Contact
-You can find me here:
-- [GitHub](https://github.com/GragonGit)
+## Want to find out more?
+Contact me on [GitHub](https://github.com/GragonGit) or [LinkedIn](www.linkedin.com/in/tristan-nußbaum) and we can have chat!
