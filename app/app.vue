@@ -1,6 +1,6 @@
 <template>
   <main>
-      <!-- <SideNav /> -->
+    <!-- <SideNav /> -->
     <NuxtPage />
     <footer class="imprint">
       Made by Tristan | {{ new Date().getFullYear() }}
@@ -8,6 +8,17 @@
     </footer>
   </main>
 </template>
+
+<script lang="ts" setup>
+useHead({
+  htmlAttrs: {
+    lang: 'en',
+  },
+  bodyAttrs: {
+    class: 'light'
+  }
+})
+</script>
 
 <style scoped lang="sass">
 main
@@ -21,7 +32,7 @@ main
   border-radius: 2rem
 
   background-color: var(--background)
-  box-shadow: 0px 0px 16px 0px var(--background)
+  box-shadow: 0px 0px 8px 0px var(--background)
 
 .imprint
   display: flex

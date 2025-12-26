@@ -5,6 +5,12 @@ export default defineNuxtConfig({
   css: ['~/assets/style/main.sass'],
   ssr: false,
 
+  app: {
+    head: {
+      title: "Homepage",
+    }
+  },
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/icon',

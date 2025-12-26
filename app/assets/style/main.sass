@@ -2,19 +2,17 @@
 @use './colors'
 @use './text'
   
-:root
+body
   color: var(--text)
-  background-color: var(--background)
 
-  background: linear-gradient(to bottom, var(--accent-gradient)) border-box
+  background: linear-gradient(to bottom, var(--border-gradient)) border-box
   background-size: 100% 300%
   animation: lava-lamp 4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate
+
+  margin: 0
 
 @keyframes lava-lamp
   0%
     background-position: 0% 0%
   100%
     background-position: 0% 100%
-
-body
-  margin: 0
