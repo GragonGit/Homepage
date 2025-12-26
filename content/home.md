@@ -1,6 +1,6 @@
-# Hi there! I'm Tristan.
+# Welcome!
 
-I'm a **Software Engineer** from Germany focusing on **Web Development** and **Games**. I'm currently working on my masters degree and am always looking for new challenges and something new to learn.
+I'm Tristan a **Software Engineer** from Germany focusing on **Web Development** and **Games**. I'm currently working on my masters degree and am always looking for new challenges and something new to learn.
 
 You can find me on [GitHub](https://github.com/GragonGit) and [LinkedIn](www.linkedin.com/in/tristan-nußbaum).
 
@@ -39,15 +39,18 @@ During my university studies I developed a broad range of skills and still conti
 - HTML | JS/TS | CSS/SCSS
 - Vue | Nuxt | Angular
 - TailwindCSS
+- Figma
 
 ### Game Development
 - Unity | Godot
 - C# | Java
 - Blender
+- Aseprite
 
 ### Other Skills & Certifications
 - Google Cloud: [Associate Cloud Engineer Certification](https://www.credly.com/badges/c5135c27-a7a0-4c55-a3d0-8c6940aa1092/public_url)
 - Terraform
+- Obsidian
 
 ### Languages
 - German *(Native)*
