@@ -46,7 +46,7 @@ button
 
   &:hover,
   &:focus-visible
-    background-color: hsla(from var(--background) h s l / 0.1)
+    background-color: hsla(from var(--background) h s l / 0.2)
 
   & > span
     background-color: var(--text)
