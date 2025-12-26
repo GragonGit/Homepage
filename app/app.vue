@@ -1,41 +1,47 @@
 <template>
-  <main>
-    <!-- <SideNav /> -->
-    <NuxtPage />
-    <footer class="imprint">
-      Made by Tristan | {{ new Date().getFullYear() }}
-      <a href="https://gragongit.github.io/Alles-nach-hier/">Imprint</a>
-    </footer>
-  </main>
+  <div class="app">
+    <TopMenu />
+    <main>
+      <!-- <SideNav /> -->
+      <NuxtPage />
+      <footer class="imprint">
+        Made by Tristan | {{ new Date().getFullYear() }}
+        <a href="https://gragongit.github.io/Alles-nach-hier/">Imprint</a>
+      </footer>
+    </main>
+  </div>
 </template>
 
-<script lang="ts" setup>
-useHead({
-  htmlAttrs: {
-    lang: 'en',
-  },
-  bodyAttrs: {
-    class: 'light'
-  }
-})
-</script>
-
 <style scoped lang="sass">
+.app
+  display: grid
+  align-items: center
+  justify-content: center
+  justify-items: center
+
+  grid-template-rows: 2fr 90dvh 1fr
+
+  min-height: 100vh
+
+
+  & > *
+    width: 90dvw
+
 main
   // TODO Add Scrollbar
   overflow-y: scroll
   scrollbar-width: none
-
-  height: 90dvh
-  margin: 5dvh
+  height: 100%
 
   border-radius: 2rem
 
   background-color: hsla(from var(--background) h s l / 0.8)
-  backdrop-filter: blur(10px)
+  backdrop-filter: blur(20px)
   border: 1px solid hsla(from var(--background) h s l / 0.3)
   box-shadow: 0px 4px 20px var(--background-shadow)
 
+  transition: var(--default-transition)
+  transition-property: all
 
 .imprint
   display: flex

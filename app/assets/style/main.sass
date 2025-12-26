@@ -1,14 +1,17 @@
 @use '../fonts/index'
 @use './colors'
 @use './text'
-  
+
 body
+  --default-transition: none 0.2s ease-in-out
+
   color: var(--text)
 
   background: linear-gradient(to bottom, var(--border-gradient)) border-box
   background-size: 100% 300%
-  animation: lava-lamp 4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate
+  animation: lava-lamp 20s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate
 
+  min-height: 100dvh
   margin: 0
 
 @keyframes lava-lamp
