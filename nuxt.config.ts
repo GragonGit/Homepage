@@ -8,6 +8,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Homepage",
+      htmlAttrs: {
+        lang: 'en',
+      },
     }
   },
 
