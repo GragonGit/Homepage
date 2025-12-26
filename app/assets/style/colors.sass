@@ -1,13 +1,15 @@
 .light
   --background: #fff
   --text: #1a1a1a
-  --accent: #1302a6
+  --accent: #093cca
 
-  --border-gradient: #f0f4ff, #d9e2ff
+  --background-shadow: #0004
+  --border-gradient: hsl(from var(--accent) h s 80%), hsl(from var(--accent) calc(h + 20) s 70%)
 
 .dark
   --background: #000
   --text: #ddd
   --accent: #46afdd
 
-  --border-gradient: var(--accent), #1771bb
+  --background-shadow: #000f
+  --border-gradient: hsl(from var(--accent) h s 60%), hsl(from var(--accent) calc(h + 20) s 40%)

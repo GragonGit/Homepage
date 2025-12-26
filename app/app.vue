@@ -31,8 +31,11 @@ main
 
   border-radius: 2rem
 
-  background-color: var(--background)
-  box-shadow: 0px 0px 8px 0px var(--background)
+  background-color: hsla(from var(--background) h s l / 0.8)
+  backdrop-filter: blur(10px)
+  border: 1px solid hsla(from var(--background) h s l / 0.3)
+  box-shadow: 0px 4px 20px var(--background-shadow)
+
 
 .imprint
   display: flex
