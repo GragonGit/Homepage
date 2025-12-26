@@ -6,13 +6,15 @@
   color: var(--text)
   background-color: var(--background)
 
-  font-family: 'Atkinson Hyperlegible Mono', Inter, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  line-height: 1.6
-  word-spacing: -0.2em
-  scrollbar-color: var(--accent) black
-  scrollbar-width: thin
+  background: linear-gradient(to bottom, var(--accent-gradient)) border-box
+  background-size: 100% 300%
+  animation: lava-lamp 4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate
+
+@keyframes lava-lamp
+  0%
+    background-position: 0% 0%
+  100%
+    background-position: 0% 100%
 
 body
   margin: 0

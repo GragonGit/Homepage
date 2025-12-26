@@ -1,9 +1,7 @@
 <template>
   <main>
-    <div class="layout">
       <!-- <SideNav /> -->
-      <NuxtPage />
-    </div>
+    <NuxtPage />
     <footer class="imprint">
       Made by Tristan | {{ new Date().getFullYear() }}
       <a href="https://gragongit.github.io/Alles-nach-hier/">Imprint</a>
@@ -13,60 +11,24 @@
 
 <style scoped lang="sass">
 main
-  padding: 2rem
+  // TODO Add Scrollbar
+  overflow-y: scroll
+  scrollbar-width: none
 
-// Border
-.layout::before
-    content: ''
-    position: fixed
-    
-    inset: -30px
-    border: 50px solid transparent
-    border-radius: 5rem
+  height: 90dvh
+  margin: 5dvh
 
-    background: linear-gradient(to bottom, var(--accent-gradient)) border-box
-    background-size: 100% 200%
+  border-radius: 2rem
 
-    animation: lava-lamp 12s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate
-
-    // This masks out the center area defined by the padding-box
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)
-    -webkit-mask-composite: destination-out
-    mask-composite: exclude
-    
-    z-index: 9999
-    pointer-events: none
-
-// Blur
-.layout::after
-    content: ''
-    position: fixed
-    
-    inset: -30px
-    border: 50px solid transparent
-    border-radius: 5rem
-
-    background: linear-gradient(var(--background), var(--background)) padding-box, linear-gradient(to bottom, var(--accent-gradient)) border-box
-    background-size: 100% 200%
-
-    filter: blur(1rem)
-    animation: lava-lamp 12s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate
-    opacity: 25%
-
-    z-index: -9999
-    pointer-events: none
-
-@keyframes lava-lamp
-  0%
-    background-position: 0% 0%
-  100%
-    background-position: 0% 100%
+  background-color: var(--background)
+  box-shadow: 0px 0px 16px 0px var(--background)
 
 .imprint
   display: flex
   justify-content: space-between
 
-  margin: 15rem 1rem 0.5rem 1rem
+  margin-top: 15rem
+  padding: 1rem 2rem
 
   font-size: 0.7rem
 
