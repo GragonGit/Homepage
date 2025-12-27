@@ -1,5 +1,7 @@
 ---
 title: '3F Versioning'
+description: "SemVer doesn't really do it for me and most software projects I've seen. As a solution, I'd like to propose a different but similar versioning system that more closely resembles what updates actually are."
+# TODO Add date, color and showcase frontmatter
 ---
 
 # 3F Versioning

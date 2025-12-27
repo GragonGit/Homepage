@@ -98,7 +98,7 @@ Technologies: C#, Unity
 Like every semi-experienced software developer do I have some opinions on a lot of topics. This and more about my projects, ideas and whatever I feel like writing about can be found here.
 
 ### 3F Versioning
-*Introduction...*
+SemVer doesn't really do it for me and most software projects I've seen. As a solution, I'd like to propose a different but similar versioning system that more closely resembles what updates actually are.
 
 [Read more](/blog/3f-versioning)
 

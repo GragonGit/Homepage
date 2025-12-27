@@ -3,9 +3,9 @@
     <TopMenu />
     <main>
       <!-- <SideNav /> -->
-      <NuxtPage />
+      <NuxtPage class="content" />
       <footer class="imprint">
-        Made by Tristan | {{ new Date().getFullYear() }}
+        <p>Made by Tristan | {{ new Date().getFullYear() }}</p>
         <a href="https://gragongit.github.io/Alles-nach-hier/">Imprint</a>
       </footer>
     </main>
@@ -42,6 +42,12 @@ main
 
   transition: var(--default-transition)
   transition-property: all
+
+.content
+  --padding-width: 3rem
+  --max-content-width: 60ch
+
+  margin: 0 clamp(0rem, 50dvw, (100% - var(--max-content-width)) / 2)
 
 .imprint
   display: flex

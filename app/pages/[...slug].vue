@@ -1,9 +1,9 @@
 <template>
-  <ContentRenderer v-if="content" class="content" :value="content" />
-  <div v-else class="content">
-      <h1>Page Not Found</h1>
-      <p>Oops! The content you're looking for doesn't exist.</p>
-      <NuxtLink to="/">Go back home</NuxtLink>
+  <ContentRenderer v-if="content" :value="content" />
+  <div v-else>
+    <h1>Page Not Found</h1>
+    <p>Oops! The content you're looking for doesn't exist.</p>
+    <NuxtLink to="/">Go back home</NuxtLink>
   </div>
 </template>
 
@@ -19,11 +19,3 @@ const { data: content } = await useAsyncData(
 
 useTitle().value = content.value?.title ?? 'Page not found'
 </script>
-
-<style scoped lang="sass">
-.content
-  --padding-width: 3rem
-  --max-content-width: 60ch
-
-  margin: 0 clamp(0rem, 50dvw, (100% - var(--max-content-width)) / 2)
-</style>
