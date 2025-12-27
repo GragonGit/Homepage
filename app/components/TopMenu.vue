@@ -13,6 +13,7 @@
 </template>
 
 <script lang="ts" setup>
+  // TODO Select theme based on user preferences
 const { theme, toggleTheme } = useTheme()
 const title = useTitle()
 
