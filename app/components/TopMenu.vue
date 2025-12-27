@@ -3,8 +3,7 @@
     <button class="menuButton">
       <Icon name="material-symbols:menu" />
     </button>
-    <!-- TODO Set to page title -->
-    <p> Homepage </p>
+    <p> {{ title }} </p>
     <button class="themeButton" @click="toggleTheme">
       <Icon :name="theme === 'light'
         ? 'material-symbols:dark-mode-outline-rounded'
@@ -15,6 +14,7 @@
 
 <script lang="ts" setup>
 const { theme, toggleTheme } = useTheme()
+const title = useTitle()
 
 useHead({
   bodyAttrs: {

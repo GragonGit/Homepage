@@ -1,3 +1,7 @@
+---
+title: 'Welcome'
+---
+
 # Welcome!
 
 I'm Tristan a **Software Engineer** from Germany focusing on **Web Development** and **Games**. I'm currently working on my masters degree and am always looking for new challenges and something new to learn.

@@ -1,9 +1,10 @@
 <script setup lang="ts">
-const { data: home } = await useAsyncData(() => queryCollection('content').path('/home').first())
+const { data: content } = await useAsyncData(() => queryCollection('content').path('/home').first())
+useTitle().value = content.value!.title
 </script>
 
 <template>
-  <ContentRenderer v-if="home" class="content" :value="home" />
+  <ContentRenderer v-if="content" class="content" :value="content" />
 </template>
 
 <style scoped lang="sass">
