@@ -100,7 +100,7 @@ Like every semi-experienced software developer do I have some opinions on a lot 
 ### 3F Versioning
 *Introduction...*
 
-[Read more]() *(Coming Soon)*
+[Read more](/blog/3f-versioning)
 
 ### Tailwind is just bloatware
 *Introduction...*
