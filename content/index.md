@@ -95,7 +95,7 @@ Technologies: C#, Unity
 [Learn More]() *(Coming Soon)*
 
 ## Blog
-Like every semi-experienced software developer do I have some opinions on a lot of topics. This and more about my projects, ideas and whatever I feel like writing about can be found here.
+Like every semi-experienced software developer do I have some opinions on a lot of topics. This and more about my projects, ideas and whatever I feel like writing about can be found [here](/blog).
 
 ### 3F Versioning
 SemVer doesn't really do it for me and most software projects I've seen. As a solution, I'd like to propose a different but similar versioning system that more closely resembles what updates actually are.
