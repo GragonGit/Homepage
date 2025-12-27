@@ -1,11 +1,12 @@
-<script setup lang="ts">
-const { data: content } = await useAsyncData(() => queryCollection('content').path('/home').first())
-useTitle().value = content.value!.title
-</script>
-
 <template>
   <ContentRenderer v-if="content" class="content" :value="content" />
 </template>
+
+<script setup lang="ts">
+const slug = useRoute().params.slug
+const { data: content } = await useAsyncData(() => queryCollection('content').path(`/${slug}`).first())
+useTitle().value = content.value?.title ?? 'Page not found'
+</script>
 
 <style scoped lang="sass">
 .content
