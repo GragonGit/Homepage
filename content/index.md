@@ -63,14 +63,14 @@ During my university studies I developed a broad range of skills and still conti
 ## Projects
 Here are some of my recent projects I finished or work on in my free time. For a full list of projects click [here]() *(Coming Soon)*.
 
-### RPG Map Generator
+<!-- ### RPG Map Generator
 A tool written in Java that takes a small scale image of a map and scales it up using Wave Function Collapse into a high resolution map with great detail.
 
 *Screenshots*
 
 Technologies: Java
 
-[Learn More]() *(Coming Soon)*
+[Learn More]() *(Coming Soon)* -->
 
 ### Overtruck
 A roguelike, platformer inspired by the video game [Clustertruck](https://de.wikipedia.org/wiki/Clustertruck) where you jump over trucks which drive over bumpy procedurally generated terrain trying to reach a finish line which increases its distance with every success.
@@ -102,7 +102,7 @@ Like every semi-experienced software developer do I have some opinions on a lot 
 
 [Read more](/blog/3f-versioning)
 
-### Tailwind is just bloatware
+<!-- ### Tailwind is just bloatware
 *Introduction...*
 
 [Read more]() *(Coming Soon)*
@@ -110,7 +110,7 @@ Like every semi-experienced software developer do I have some opinions on a lot 
 ### How to make your website change theme without beyond light and darkmode
 *Introduction...*
 
-[Read more]() *(Coming Soon)*
+[Read more]() *(Coming Soon)* -->
 
 ## Want to find out more?
 Contact me on [GitHub](https://github.com/GragonGit) or [LinkedIn](www.linkedin.com/in/tristan-nußbaum) and we can have chat!
