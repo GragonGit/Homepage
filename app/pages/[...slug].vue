@@ -3,8 +3,15 @@
 </template>
 
 <script setup lang="ts">
-const slug = useRoute().params.slug
-const { data: content } = await useAsyncData(() => queryCollection('content').path(`/${slug}`).first())
+const route = useRoute()
+const path = computed(() => route.path)
+
+const { data: content } = await useAsyncData(
+    `content-${path.value}`,
+    () => queryCollection('content').path(path.value).first(),
+    { watch: [path] }
+)
+
 useTitle().value = content.value?.title ?? 'Page not found'
 </script>
 
