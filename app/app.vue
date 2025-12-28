@@ -2,8 +2,11 @@
   <div class="app">
     <TopMenu />
     <main>
-      <!-- <SideNav /> -->
-      <NuxtPage class="content" />
+      <div class="content-group">
+        <SideNav />
+        <NuxtPage class="content" />
+        <!-- Add ToC -->
+      </div>
       <footer class="imprint">
         <p>Made by Tristan | {{ new Date().getFullYear() }}</p>
         <a href="https://gragongit.github.io/Alles-nach-hier/">Imprint</a>
@@ -22,7 +25,6 @@
   grid-template-rows: 2fr 90dvh 1fr
 
   min-height: 100vh
-
 
   & > *
     width: 90dvw
@@ -43,17 +45,23 @@ main
   transition: var(--default-transition)
   transition-property: all
 
+.content-group
+  display: flex
+  align-items: flex-start
+  position: relative
+  min-height: 100%
+
 .content
   --padding-width: 3rem
   --max-content-width: 60ch
 
   margin: 0 clamp(0rem, 50dvw, (100% - var(--max-content-width)) / 2)
+  margin-bottom: 15rem
 
 .imprint
   display: flex
   justify-content: space-between
 
-  margin-top: 15rem
   padding: 1rem 2rem
 
   font-size: 0.7rem

@@ -1,6 +1,6 @@
 <template>
   <div class="menu">
-    <button class="menuButton">
+    <button class="menuButton" @click="toggleSideNav">
       <Icon name="material-symbols:menu" />
     </button>
     <p> {{ title }} </p>
@@ -16,6 +16,7 @@
   // TODO Select theme based on user preferences
 const { theme, toggleTheme } = useTheme()
 const title = useTitle()
+const { toggleSideNav } = useSideNav()
 
 useHead({
   bodyAttrs: {
