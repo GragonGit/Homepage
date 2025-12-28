@@ -1,3 +1,3 @@
 export const useTitle = () => {
-  return useState('title', () => 'Welcome')
+  return useState<string>('title', () => 'Welcome')
 }
