@@ -31,14 +31,20 @@ nav
   position: sticky
   top: 0
 
-  height: 90dvh
-  width: clamp(100px, 5dvw, 400px)
-  // Pulls back the content
-  margin-right: clamp(-100px, -5dvw, -400px)
+  
+  @media (min-width: 999px)
+    height: 90dvh
+    width: clamp(100px, 5dvw, 400px)
+    // Pulls back the content
+    margin-right: clamp(-100px, -5dvw, -400px)
 
 ul
   list-style: none
   padding-inline-start: 2rem
+  
+  @media (max-width: 1000px)
+    display: flex
+    flex-direction: row
 
 .slide-enter-active,
 .slide-leave-active

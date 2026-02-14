@@ -51,6 +51,9 @@ main
   position: relative
   min-height: 100%
 
+  @media (max-width: 1000px)
+    flex-direction: column
+
 .content
   --padding-width: 3rem
   --max-content-width: 60ch
