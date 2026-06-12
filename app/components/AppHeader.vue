@@ -26,9 +26,8 @@ a
   padding: 0.5em 1em
   border-radius: 3em
 
-  font-size: 7pt
-  font-weight: bold
-  letter-spacing: 0.5px
+  font-size: 8pt
+  letter-spacing: 0.75px
   text-transform: uppercase
 
   color: #fff
