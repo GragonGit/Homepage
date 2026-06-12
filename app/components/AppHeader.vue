@@ -27,6 +27,7 @@ a
 
   font-size: 7pt
   font-weight: bold
+  letter-spacing: 0.5px
   text-transform: uppercase
 
   color: #fff
