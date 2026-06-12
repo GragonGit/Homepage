@@ -1,12 +1,11 @@
 <template>
-<header>
-</header>
-
-<footer>
-  <!-- <a href="https://gragongit.github.io/Alles-nach-hier/">Imprint</a> -->
-</footer>
+<AppHeader />
+<NuxtPage class="page" />
+<AppFooter />
 </template>
 
-<style scoped lang="sass">
-
+<style lang="sass" scoped>
+.page
+  min-height: 100lvh
+  background-color: red
 </style>
