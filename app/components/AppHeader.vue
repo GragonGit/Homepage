@@ -1,6 +1,6 @@
 <template>
 <header>
-  <NuxtLink :to="link" v-for="link in links">{{ link }}</NuxtLink>
+  <NuxtLink :to="link === 'home' ? '/' : link" v-for="link in links">{{ link }}</NuxtLink>
 </header>
 </template>
 
@@ -11,6 +11,7 @@ const links = ["home", "projects", "about"]
 <style lang="sass" scoped>
 header
   position: fixed
+  top: 0
   width: 100%
 
   padding: 0.5rem
