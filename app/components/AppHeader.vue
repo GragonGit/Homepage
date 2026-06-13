@@ -20,7 +20,7 @@ header
   justify-content: center
   gap: 0.5em
 
-  background-image: radial-gradient(150rem 3rem ellipse at center top, var(--secondary) -500%, var(--transparent) 75%)
+  background-image: linear-gradient(180deg, var(--secondary) -300%, var(--transparent) 99%)
 
 a
   padding: 0.5em 1em
