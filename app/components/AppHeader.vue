@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-const links = ["home", "projects", "about"]
+const links = ["home", "projects", "games", "skills", "about"]
 </script>
 
 <style lang="sass" scoped>
