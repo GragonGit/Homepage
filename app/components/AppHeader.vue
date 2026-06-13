@@ -17,7 +17,7 @@ header
   padding: 0.5rem
 
   display: flex
-  justify-content: center
+  justify-content: flex-end
   gap: 0.5em
 
   background-image: linear-gradient(180deg, var(--secondary) -300%, var(--transparent) 99%)
@@ -28,7 +28,7 @@ a
   border: solid 2px var(--transparent)
   border-radius: 3em
 
-  font-size: 8pt
+  font-size: 9pt
   letter-spacing: 0.75px
   text-transform: uppercase
 
