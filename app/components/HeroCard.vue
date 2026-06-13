@@ -19,7 +19,7 @@ defineProps<{
   position: relative
   aspect-ratio: 1
 
-  border: solid 10px var(--secondary) 
+  border: solid 8px var(--secondary) 
   border-radius: 1em
 
   display: flex
@@ -28,7 +28,7 @@ defineProps<{
   justify-content: stretch
   gap: 0.5rem
 
-  padding: 1em
+  padding: 1.5em
 
   background-color: var(--primary)
 
@@ -38,7 +38,6 @@ defineProps<{
     .iconify
       color: var(--primary)
 
-    // 3. ...and change the child label color
     label
       color: var(--primary)
 
