@@ -20,10 +20,12 @@ header
   justify-content: center
   gap: 0.5em
 
-  background-image: radial-gradient(100rem 2.5rem ellipse at center top, var(--secondary) -500%, var(--transparent))
+  background-image: radial-gradient(150rem 3rem ellipse at center top, var(--secondary) -500%, var(--transparent) 75%)
 
 a
   padding: 0.5em 1em
+
+  border: solid 2px var(--transparent)
   border-radius: 3em
 
   font-size: 8pt
@@ -33,6 +35,7 @@ a
   color: var(--white)
 
   &:hover, &:focus-visible
+    border: solid 2px var(--secondary)
     background-color: var(--white)
     color: var(--secondary)
 </style>
