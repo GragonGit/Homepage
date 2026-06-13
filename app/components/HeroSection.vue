@@ -1,7 +1,7 @@
 <template>
 <section class="hero content">
   <h1>Tristan</h1>
-  <p id="professions">Web Games Software</p>
+  <p id="subheader">Web Games Software</p>
   <ul>
     <li v-for="card in cards" :key="card.label">
       <HeroCard v-bind="card" />
@@ -46,16 +46,14 @@ h1
 
     background-image: repeating-linear-gradient(45deg, var(--secondary), var(--secondary) 20px, transparent 20px, transparent 40px)
 
-#professions
-  padding: 0.25rem 1rem
+#subheader
+  padding: 0.5rem
 
-  border-radius: 3em
+  border: solid var(--secondary)
+  border-width: 6px 0
 
   text-align: justify
   text-align-last: justify
-
-  background-color: var(--secondary)
-  color: var(--primary)
 
 ul
   margin: 3rem 0
