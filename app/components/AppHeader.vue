@@ -20,7 +20,7 @@ header
   justify-content: center
   gap: 0.5em
 
-  mix-blend-mode: difference
+  background-image: radial-gradient(100rem 2.5rem ellipse at center top, var(--secondary) -500%, var(--transparent))
 
 a
   padding: 0.5em 1em
@@ -30,9 +30,9 @@ a
   letter-spacing: 0.75px
   text-transform: uppercase
 
-  color: #fff
+  color: var(--white)
 
   &:hover, &:focus-visible
-    background-color: var(--background)
-    color: #000
+    background-color: var(--white)
+    color: var(--secondary)
 </style>
