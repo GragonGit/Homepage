@@ -47,20 +47,21 @@ h1
     background-image: repeating-linear-gradient(45deg, var(--secondary), var(--secondary) 20px, transparent 20px, transparent 40px)
 
 #subheader
-  padding: 0.5rem
+  padding: 0.5rem 0.1rem
 
   border: solid var(--secondary)
   border-width: 6px 0
 
   text-align: justify
   text-align-last: justify
+  text-transform: uppercase
 
 ul
   margin: 3rem 0
   padding: 0
 
   display: grid
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
   gap: 1.5rem
 
   list-style-type: none

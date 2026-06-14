@@ -28,7 +28,7 @@ defineProps<{
   justify-content: stretch
   gap: 0.5rem
 
-  padding: 1.5em
+  padding: clamp(0.5em, 2vw, 1.5em)
 
   background-color: var(--primary)
 
