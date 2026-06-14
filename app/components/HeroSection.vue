@@ -47,10 +47,10 @@ h1
     background-image: repeating-linear-gradient(45deg, var(--secondary), var(--secondary) 20px, transparent 20px, transparent 40px)
 
 #subheader
-  padding: 0.5rem 0.1rem
+  padding: 0.5rem 0.25rem
 
   border: solid var(--secondary)
-  border-width: 6px 0
+  border-width: 8px 0
 
   text-align: justify
   text-align-last: justify
