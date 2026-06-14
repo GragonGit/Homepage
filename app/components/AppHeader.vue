@@ -1,6 +1,6 @@
 <template>
 <header>
-  <NuxtLink :to="link === 'home' ? '/' : link" v-for="link in links">{{ link }}</NuxtLink>
+  <NuxtLink v-for="link in links" :key="link" :to="link === 'home' ? '/' : link">{{ link }}</NuxtLink>
 </header>
 </template>
 
