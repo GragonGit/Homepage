@@ -9,6 +9,8 @@
       </li>
     </ul>
   </div>
+
+  <span id="scroll-indicator"> <span>▼</span> More Below <span>▼</span> </span>
 </section>
 </template>
 
@@ -23,21 +25,38 @@ const cards = [
 
 <style lang="sass" scoped>
 section
+  position: relative
+
   min-height: 100lvh
+  
+  border-bottom: 16px solid var(--secondary)
 
   display: flex
   flex-direction: column
   align-items: stretch
   justify-content: center
 
-  &::after
-    content: ''
-    position: absolute
-    bottom: 0
-    width: 100%
-    height: 16px
-    
-    background-image: repeating-linear-gradient(45deg, var(--secondary), var(--secondary) 12px, transparent 12px, transparent 24px)
+#scroll-indicator
+  position: absolute
+  bottom: calc( 16px + 16px ) // border + padding
+  left: 50%
+  transform: translateX(-50%)
+
+  display: flex
+  align-items: flex-start
+
+  font-size: 0.85rem
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.05em
+
+  color: var(--secondary)
+  
+  & > span
+    padding-inline: 0.2rem
+
+    font-size: 0.7rem
+    color: var(--accent)
 
 .hero
   max-width: 50rem
