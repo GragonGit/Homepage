@@ -32,13 +32,8 @@ defineProps<{
   background-color: var(--primary)
 
   &:hover, &:focus-within, &:focus-visible
-    background-color: var(--secondary)
-
-    .iconify
-      color: var(--primary)
-
-    label
-      color: var(--primary)
+    transform: translate(-4px, -4px)
+    box-shadow: 4px 4px 0px 0px var(--accent)
 
 a
   position: absolute

@@ -1,7 +1,7 @@
 <template>
 <section class="hero content">
   <h1>Tristan</h1>
-  <p id="subheader">Web Games Software</p>
+  <p id="subheader"><span>Software Engineer</span> <span>Germany</span></p>
   <ul>
     <li v-for="card in cards" :key="card.label">
       <HeroCard v-bind="card" />
@@ -12,10 +12,10 @@
 
 <script lang="ts" setup>
 const cards = [
-  { label: "projects", url: "projects", icon: "material-symbols:web" },
-  { label: "games", url: "games", icon: "material-symbols:stadia-controller" },
-  { label: "skills", url: "skills", icon: "material-symbols:star-rounded" },
-  { label: "about", url: "about", icon: "material-symbols:person" }
+  { label: "projects", url: "projects", icon: "material-symbols:web-sharp" },
+  { label: "games", url: "games", icon: "material-symbols:videogame-asset-sharp" },
+  { label: "skills", url: "skills", icon: "material-symbols:star-sharp" },
+  { label: "about", url: "about", icon: "material-symbols:person-sharp" }
 ]
 </script>
 
@@ -47,13 +47,14 @@ h1
     background-image: repeating-linear-gradient(45deg, var(--secondary), var(--secondary) 20px, transparent 20px, transparent 40px)
 
 #subheader
-  padding: 0.5rem 0.25rem
+  padding: 0.75rem 0.25rem
 
   border: solid var(--secondary)
   border-width: 8px 0
 
-  text-align: justify
-  text-align-last: justify
+  display: flex
+  justify-content: space-between
+
   text-transform: uppercase
 
 ul
