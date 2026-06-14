@@ -1,7 +1,7 @@
 <template>
 <section class="hero content">
   <h1>Tristan</h1>
-  <p id="subheader"><span>Software Engineer</span> <span>Germany</span></p>
+  <p id="subheader"><span>Game & Software Engineer</span> <span>Germany</span></p>
   <ul>
     <li v-for="card in cards" :key="card.label">
       <HeroCard v-bind="card" />
@@ -21,8 +21,13 @@ const cards = [
 
 <style lang="sass" scoped>
 .hero
-  margin-top: 5rem
   max-width: 50rem
+  min-height: 100lvh
+
+  display: flex
+  flex-direction: column
+  align-items: stretch
+  justify-content: center
 
 h1
   margin-block: 2rem
