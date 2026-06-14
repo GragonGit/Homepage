@@ -1,12 +1,14 @@
 <template>
-<section class="hero content">
-  <h1>Tristan</h1>
-  <p id="subheader"><span>Game & Software Engineer</span> <span>Germany</span></p>
-  <ul>
-    <li v-for="card in cards" :key="card.label">
-      <HeroCard v-bind="card" />
-    </li>
-  </ul>
+<section>
+  <div class="hero content">
+    <h1>Gragon</h1>
+    <p id="subheader"><span>Game & Software Engineer</span> <span>Germany</span></p>
+    <ul>
+      <li v-for="card in cards" :key="card.label">
+        <HeroCard v-bind="card" />
+      </li>
+    </ul>
+  </div>
 </section>
 </template>
 
@@ -20,14 +22,25 @@ const cards = [
 </script>
 
 <style lang="sass" scoped>
-.hero
-  max-width: 50rem
+section
   min-height: 100lvh
 
   display: flex
   flex-direction: column
   align-items: stretch
   justify-content: center
+
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 16px
+    
+    background-image: repeating-linear-gradient(45deg, var(--secondary), var(--secondary) 12px, transparent 12px, transparent 24px)
+
+.hero
+  max-width: 50rem
 
 h1
   margin-block: 2rem
