@@ -1,7 +1,8 @@
 <template>
-  <footer>
-    <a href="https://gragongit.github.io/Alles-nach-hier/">Imprint</a>
-  </footer>
+<section>
+  <div class="content">
+  </div>
+</section>
 </template>
 
 <script lang="ts" setup>
@@ -9,7 +10,7 @@
 </script>
 
 <style lang="sass" scoped>
-footer
+section
   min-height: 50lvh
 
   background-color: var(--secondary)
