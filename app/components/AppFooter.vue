@@ -12,5 +12,5 @@
 footer
   min-height: 50lvh
 
-  background-color: var(--secondary)
+  background-color: var(--accent)
 </style>
