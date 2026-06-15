@@ -20,7 +20,7 @@ section
   justify-content: center
 
   color: var(--primary)
-  background-color: var(--secondary)
+  background-color: var(--accent)
 
 h2
   text-transform: uppercase
