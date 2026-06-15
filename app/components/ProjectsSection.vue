@@ -1,6 +1,7 @@
 <template>
 <section>
   <div class="content">
+    <h2>Projects</h2>
   </div>
 </section>
 </template>
@@ -11,7 +12,16 @@
 
 <style lang="sass" scoped>
 section
-  min-height: 50lvh
+  border-bottom: 16px solid var(--primary)
 
+  display: flex
+  flex-direction: column
+  align-items: stretch
+  justify-content: center
+
+  color: var(--primary)
   background-color: var(--secondary)
+
+h2
+  text-transform: uppercase
 </style>
