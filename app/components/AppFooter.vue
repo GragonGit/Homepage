@@ -42,13 +42,17 @@ footer
 
   padding: 2rem
 
-  font-size: 10pt
+  font-size: 1rem
 
   color: var(--primary)
   background-color: var(--secondary)
 
   & a
+    font-size: 1rem
     color: var(--primary)
+
+    &:hover
+      color: var(--accent)
 
 .content
   max-width: 60rem

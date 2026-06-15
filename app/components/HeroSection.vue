@@ -70,14 +70,14 @@ section
 
 #scroll-indicator
   position: absolute
-  bottom: calc( 16px + 16px ) // border + padding
+  bottom: calc( 16px + 1rem ) // border + padding
   left: 50%
   transform: translateX(-50%)
 
   display: flex
   align-items: flex-start
 
-  font-size: 0.85rem
+  font-size: 0.9rem
   font-weight: 700
   text-transform: uppercase
   letter-spacing: 0.05em
@@ -91,10 +91,10 @@ section
     color: var(--accent)
 
 .hero
-  max-width: 50rem
+  max-width: 70rem
 
 h1
-  margin-block: 2rem
+  margin-block: 1rem 2rem
 
   display: flex
   align-items: baseline
