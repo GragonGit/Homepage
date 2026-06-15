@@ -100,10 +100,6 @@ h1
   align-items: baseline
   gap: clamp(0.75rem, 2vw, 1.5rem)
 
-  font-size: clamp(3rem, 12vw, 64pt)
-  font-weight: 900
-  text-transform: uppercase
-
   color: var(--accent)
 
   &::after
