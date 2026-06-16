@@ -12,7 +12,7 @@ export const mainNavigation: NavLink[] = [
 ]
 
 export const footerMainNavigation: NavLink[] = [
-  { label: "Home", url: "/" },
+  { label: "Home", url: "/#hero" },
   ...mainNavigation
 ]
 
