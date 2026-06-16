@@ -21,6 +21,7 @@ export const socialNavigation: NavLink[] = [
   // { label: "LinkedIn", url: "https://linkedin.com/in/your-profile" }
 ]
 
+//TODO - Proper Links
 export const legalNavigation: NavLink[] = [
   { label: "Imprint", url: "/imprint" },
   { label: "Privacy", url: "/privacy" },
