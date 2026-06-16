@@ -12,7 +12,7 @@
 
 <style lang="sass" scoped>
 section
-  border-bottom: 16px solid var(--secondary)
+  border-bottom: var(--border-l) solid var(--secondary)
 
   display: flex
   flex-direction: column

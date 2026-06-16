@@ -44,7 +44,7 @@ section
 
   min-height: 100lvh
 
-  border-bottom: 16px solid var(--accent)
+  border-bottom: var(--border-l) solid var(--accent)
 
   display: flex
   flex-direction: column
@@ -70,7 +70,7 @@ section
 
 #scroll-indicator
   position: absolute
-  bottom: calc( 16px + 1rem ) // border + padding
+  bottom: calc( var(--border-l) + 1rem ) // border + padding
   left: 50%
   transform: translateX(-50%)
 
@@ -115,7 +115,7 @@ h1
   padding: 0.75rem 0.25rem
 
   border: solid var(--secondary)
-  border-width: 8px 0
+  border-width: var(--border-m) 0
 
   display: flex
   justify-content: space-between

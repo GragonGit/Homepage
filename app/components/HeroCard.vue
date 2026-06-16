@@ -19,7 +19,7 @@ defineProps<{
   position: relative
   aspect-ratio: 1
 
-  border: solid 8px var(--secondary) 
+  border: solid var(--border-m) var(--secondary) 
 
   display: flex
   flex-direction: column

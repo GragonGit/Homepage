@@ -25,7 +25,7 @@ header
 a
   padding: 0.5em 1em
 
-  border: solid 2px var(--transparent)
+  border: solid var(--border-xs) var(--transparent)
   border-radius: 3em
 
   font-size: 9pt
@@ -35,7 +35,7 @@ a
   color: var(--white)
 
   &:hover, &:focus-visible
-    border: solid 2px var(--secondary)
+    border: solid var(--border-xs) var(--secondary)
     background-color: var(--white)
     color: var(--secondary)
 </style>

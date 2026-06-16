@@ -33,7 +33,7 @@
 
 <style lang="sass" scoped>
 footer
-  border-bottom: 4px solid var(--accent)
+  border-bottom: var(--border-s) solid var(--accent)
 
   display: flex
   flex-direction: column
@@ -67,5 +67,5 @@ nav
   gap: 1em
 
 hr
-  border: 2px solid var(--primary)
+  border: var(--border-xs) solid var(--primary)
 </style>
