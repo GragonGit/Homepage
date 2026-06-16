@@ -60,7 +60,7 @@ section
   opacity: var(--mask-opacity, 0)
   transition: opacity 0.3s ease
 
-  mask-image: radial-gradient(circle 100px at var(--mouse-x) var(--mouse-y), black 10%, #0004 100%)
+  mask-image: radial-gradient(circle 100px at var(--mouse-x) var(--mouse-y), black 10%, #0002 100%)
   -webkit-mask-image: radial-gradient(circle 100px at var(--mouse-x) var(--mouse-y), black 10%, #0002 100%)
 
   z-index: -10
