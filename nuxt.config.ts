@@ -14,6 +14,12 @@ export default defineNuxtConfig({
     }
   },
 
+  router: {
+    options: {
+      scrollBehaviorType: "smooth"
+    }
+  },
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/icon',
