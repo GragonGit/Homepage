@@ -21,7 +21,4 @@ section
 
   color: var(--primary)
   background-color: var(--accent)
-
-h2
-  text-transform: uppercase
 </style>
