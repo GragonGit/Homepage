@@ -3,33 +3,22 @@
   <div class="content">
     <div class="links">
       <nav>
-        <NuxtLink to="Home">Home</NuxtLink>
-        <NuxtLink to="Home">Projects</NuxtLink>
-        <NuxtLink to="Home">Games</NuxtLink>
-        <NuxtLink to="Home">Skills</NuxtLink>
-        <NuxtLink to="Home">About</NuxtLink>
+        <NuxtLink v-for="link in footerMainNavigation" :key="link.url" :to="link.url">{{ link.label }}</NuxtLink>
       </nav>
       <nav>
-        <NuxtLink to="Home">GitHub</NuxtLink>
-        <NuxtLink to="Home">LinkedIn</NuxtLink>
+        <NuxtLink v-for="link in socialNavigation" :key="link.url" :to="link.url">{{ link.label }}</NuxtLink>
       </nav>
     </div>
     <hr noshade>
     <div class="links">
       <span>© {{ new Date().getFullYear() }} Gragon. All rights reserved.</span>
       <nav>
-        <NuxtLink to="Home">Imprint</NuxtLink>
-        <NuxtLink to="Home">Privacy</NuxtLink>
-        <NuxtLink to="Home">Cookies</NuxtLink>
+        <NuxtLink v-for="link in legalNavigation" :key="link.url" :to="link.url">{{ link.label }}</NuxtLink>
       </nav>
     </div>
   </div>
 </footer>
 </template>
-
-<script lang="ts" setup>
-
-</script>
 
 <style lang="sass" scoped>
 footer
@@ -65,6 +54,9 @@ nav
   display: flex
   flex-direction: row
   gap: 1em
+
+  & > a
+    text-transform: capitalize
 
 hr
   border: var(--border-xs) solid var(--primary)

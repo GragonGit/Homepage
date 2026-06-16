@@ -1,13 +1,13 @@
 <template>
-<section @mousemove="updateMouseCoords">
+<section @mousemove="updateMouseCoords" id="hero">
   <div class="matrix-bg" :style="mouseStyle" />
 
   <div class="hero content">
     <h1>Gragon</h1>
     <p id="subheader"><span>Game & Software Engineer</span> <span>Germany</span></p>
     <ul>
-      <li v-for="card in cards" :key="card.label">
-        <HeroCard v-bind="card" />
+      <li v-for="link in mainNavigation" :key="link.label">
+        <HeroCard v-bind="link" />
       </li>
     </ul>
   </div>
@@ -17,13 +17,6 @@
 </template>
 
 <script lang="ts" setup>
-const cards = [
-  { label: "projects", url: "projects", icon: "material-symbols:web-sharp" },
-  { label: "games", url: "games", icon: "material-symbols:videogame-asset-sharp" },
-  { label: "skills", url: "skills", icon: "material-symbols:star-sharp" },
-  { label: "about", url: "about", icon: "material-symbols:person-sharp" }
-]
-
 const mouseX = ref(0)
 const mouseY = ref(0)
 

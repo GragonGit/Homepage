@@ -1,6 +1,6 @@
 <template>
 <div class="card">
-  <Icon :name="icon" />
+  <Icon :name="icon ?? 'material-symbols:cookie'" />
   <NuxtLink :to="url">{{ label }}</NuxtLink>
   <label>{{ label }}</label>
 </div>
@@ -10,7 +10,7 @@
 defineProps<{
   label: string
   url: string
-  icon: string
+  icon?: string
 }>()
 </script>
 
