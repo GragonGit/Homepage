@@ -5,11 +5,9 @@
   <div class="hero content">
     <h1>Gragon</h1>
     <p id="subheader"><span>Game & Software Engineer</span> <span>Germany</span></p>
-    <ul>
-      <li v-for="link in mainNavigation" :key="link.label">
-        <AppCard v-bind="link" />
-      </li>
-    </ul>
+    <nav>
+      <AppCard v-for="link in mainNavigation" :key="link.label" v-bind="link" />
+    </nav>
   </div>
 
   <span id="scroll-indicator"> <span>▼</span> More Below <span>▼</span> </span>
@@ -119,7 +117,7 @@ h1
 
   text-transform: uppercase
 
-ul
+nav
   margin: 3rem 0
   padding: 0
 
