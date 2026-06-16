@@ -7,7 +7,7 @@
     <p id="subheader"><span>Game & Software Engineer</span> <span>Germany</span></p>
     <ul>
       <li v-for="link in mainNavigation" :key="link.label">
-        <HeroCard v-bind="link" />
+        <AppCard v-bind="link" />
       </li>
     </ul>
   </div>

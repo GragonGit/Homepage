@@ -2,7 +2,7 @@
 <div class="card">
   <Icon :name="icon ?? 'material-symbols:cookie'" />
   <NuxtLink :to="url">{{ label }}</NuxtLink>
-  <label>{{ label }}</label>
+  <span class="label">{{ label }}</span>
 </div>
 </template>
 
@@ -50,9 +50,12 @@ a
 
   color: var(--secondary)
 
-label
+.label
   flex-shrink: 0
 
+  font-size: 1.5rem
+  font-weight: 600
   text-transform: uppercase
+
   color: var(--secondary)
 </style>
