@@ -1,5 +1,5 @@
 <template>
-<section @mousemove="updateMouseCoords" id="hero">
+<section id="hero" @mousemove="updateMouseCoords">
   <div class="matrix-bg" :style="mouseStyle" />
 
   <div class="hero content">
