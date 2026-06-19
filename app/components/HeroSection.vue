@@ -4,7 +4,7 @@
 
   <div class="hero content">
     <h1>Gragon</h1>
-    <p id="subheader"><span>Game & Software Engineer</span> <span>Germany</span></p>
+    <div id="subheader"><span>Game & Software Engineer</span> <span>Germany</span></div>
     <nav>
       <AppCard v-for="link in mainNavigation" :key="link.label" v-bind="link" />
     </nav>
@@ -115,6 +115,8 @@ h1
   display: flex
   justify-content: space-between
 
+  font-size: 1.5rem
+  font-weight: 600
   text-transform: uppercase
 
 nav
@@ -124,6 +126,4 @@ nav
   display: grid
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
   gap: 1.5rem
-
-  list-style-type: none
 </style>
