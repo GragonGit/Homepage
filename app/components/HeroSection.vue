@@ -65,7 +65,7 @@ section
 
 #scroll-indicator
   position: absolute
-  bottom: calc( var(--border-l) + 1rem ) // border + padding
+  bottom: 1rem
   left: 50%
   transform: translateX(-50%)
 
