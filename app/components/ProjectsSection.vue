@@ -4,12 +4,6 @@
     <h2>Projects</h2>
     <div class="featured">
       <ImageCard v-bind="featuredImage" />
-      <div class="feature-info">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem saepe id reiciendis itaque odio sit voluptatibus fuga sunt ratione enim nam, placeat similique laudantium maxime ab, odit amet pariatur maiores.</p>
-        <div class="techstack">
-          <AppCard v-for="icon in featuredIcons" :key="icon.label" v-bind="icon" style="--primary: #222; --secondary: #efefef"/>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -33,6 +27,8 @@ const featuredIcons = [
 
 <style lang="sass" scoped>
 section
+  height: 100lvh
+
   border-bottom: var(--border-l) solid var(--primary)
   padding-bottom: 4rem
 
