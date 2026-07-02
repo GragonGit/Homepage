@@ -3,7 +3,7 @@
   <div class="matrix-bg" :style="mouseStyle" />
 
   <div class="hero content">
-    <h1>Gragon</h1>
+    <h1>Tristan</h1>
     <div id="subheader"><span>Game & Software Engineer</span> <span>Germany</span></div>
     <nav>
       <AppCard v-for="link in mainNavigation" :key="link.label" v-bind="link" />
