@@ -1,8 +1,8 @@
 <template>
 <div class="card">
   <Icon :name="icon ?? 'material-symbols:cookie'" />
-  <NuxtLink :to="url">{{ label }}</NuxtLink>
-  <span class="label">{{ label }}</span>
+  <NuxtLink :to="url" />
+  <span v-if="label !== ''" class="label">{{ label }}</span>
 </div>
 </template>
 

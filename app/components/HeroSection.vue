@@ -37,8 +37,6 @@ section
 
   min-height: 100lvh
 
-  border-bottom: var(--border-l) solid var(--accent)
-
   display: flex
   flex-direction: column
   align-items: stretch
