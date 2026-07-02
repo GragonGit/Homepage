@@ -3,7 +3,7 @@
   <ImageCard v-bind="image" />
   <p>{{ description }}</p>
   <div class="techstack">
-    <AppCard v-bind="tech" v-for="tech in techStack" />
+    <AppCard v-for="tech in techStack" v-bind="tech" :key="tech.label" />
   </div>
 </div>
 </template>
