@@ -14,6 +14,8 @@ section
   --primary: var(--theme-black)
   --secondary: var(--theme-white)
 
+  border-bottom-color: var(--secondary)
+
   min-height: 100lvh
 
   padding-bottom: 4rem

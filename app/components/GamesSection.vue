@@ -14,13 +14,8 @@
 section
   min-height: 100lvh
   
-  border-bottom: var(--border-l) solid var(--secondary)
-
   display: flex
   flex-direction: column
   align-items: stretch
   justify-content: center
-
-  color: var(--primary)
-  background-color: var(--accent)
 </style>

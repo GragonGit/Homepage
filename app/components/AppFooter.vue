@@ -22,6 +22,9 @@
 
 <style lang="sass" scoped>
 footer
+  --primary: var(--theme-black)
+  --secondary: var(--theme-white)
+  
   border-bottom: var(--border-s) solid var(--accent)
 
   display: flex
@@ -33,15 +36,11 @@ footer
 
   font-size: 1rem
 
-  color: var(--primary)
-  background-color: var(--secondary)
+  color: var(--secondary)
+  background-color: var(--primary)
 
   & a
     font-size: 1rem
-    color: var(--primary)
-
-    &:hover
-      color: var(--accent)
 
 .content
   max-width: 60rem
@@ -59,5 +58,5 @@ nav
     text-transform: capitalize
 
 hr
-  border: var(--border-xs) solid var(--primary)
+  border: var(--border-xs) solid var(--secondary)
 </style>

@@ -12,15 +12,14 @@
 
 <style lang="sass" scoped>
 section
+  --primary: var(--theme-red)
+  --secondary: var(--theme-white)
+  --accent: var(--theme-black)
+
   min-height: 100lvh
   
-  border-bottom: var(--border-l) solid var(--secondary)
-
   display: flex
   flex-direction: column
   align-items: stretch
   justify-content: center
-
-  color: var(--secondary)
-  background-color: var(--primary)
 </style>
