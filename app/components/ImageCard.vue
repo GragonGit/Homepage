@@ -19,12 +19,14 @@ defineProps<{
 
   &:hover, &:focus-visible, &:focus-within
     & img
-      transform: scale(1.05)
+      // transform: scale(1.05)
+      filter: none
 
 img
   width: 100%
   aspect-ratio: 16 / 9
   object-fit: cover
 
-  // transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1)
+  filter: grayscale(100%);
+
 </style>
