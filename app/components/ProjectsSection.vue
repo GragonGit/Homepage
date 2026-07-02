@@ -27,9 +27,9 @@ const featuredIcons = [
 
 <style lang="sass" scoped>
 section
-  height: 100lvh
+  min-height: 100lvh
 
-  border-bottom: var(--border-l) solid var(--primary)
+  border-bottom: var(--border-l) solid var(--accent)
   padding-bottom: 4rem
 
   display: flex

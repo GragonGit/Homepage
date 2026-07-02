@@ -12,6 +12,8 @@
 
 <style lang="sass" scoped>
 section
+  min-height: 100lvh
+  
   border-bottom: var(--border-l) solid var(--primary)
 
   display: flex

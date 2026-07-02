@@ -2,7 +2,7 @@
 <main>
   <HeroSection />
   <ProjectsSection />
-  <GamesSection />
+  <!-- <GamesSection /> -->
   <SkillsSection />
   <AboutSection />
 </main>
