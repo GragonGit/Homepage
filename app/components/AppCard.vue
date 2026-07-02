@@ -1,5 +1,5 @@
 <template>
-<div class="card">
+<div class="card" :style="borderWithStyle">
   <Icon :name="icon ?? 'material-symbols:cookie'" />
   <NuxtLink :to="url" />
   <span v-if="label !== ''" class="label">{{ label }}</span>
@@ -7,11 +7,17 @@
 </template>
 
 <script lang="ts" setup>
-defineProps<{
+const props = defineProps<{
   label: string
   url: string
   icon?: string
+
+  borderWidth?: string
 }>()
+
+const borderWithStyle = computed(() => ({
+  '--border-width': `var(${props.borderWidth ?? '--border-m'})`
+}))
 </script>
 
 <style lang="sass" scoped>
@@ -19,7 +25,8 @@ defineProps<{
   position: relative
   aspect-ratio: 1
 
-  border: solid var(--border-m) var(--secondary) 
+  border: solid var(--secondary)
+  border-width: var(--border-width)
 
   display: flex
   flex-direction: column

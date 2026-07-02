@@ -5,6 +5,7 @@
     <div class="featured-projects">
       <ProjectDisplay v-for="project in featuredProjects" v-bind="project" :key="project.description" />
     </div>
+    <NuxtLink to="">Check out all Projects<Icon name="material-symbols:arrow-forward" /></NuxtLink>
   </div>
 </section>
 </template>
@@ -18,16 +19,48 @@ section
 
   min-height: 100lvh
 
-  padding-bottom: 4rem
-
   display: flex
   flex-direction: column
   align-items: stretch
 
 .featured-projects
-  height: 100%
-  
   display: grid
   grid-template-columns: repeat(auto-fit, minmax(min(600px, 100%), 1fr))
+  align-items: start
   gap: 4rem
+  margin-bottom: 3rem
+
+.content
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+
+  padding-bottom: 3rem
+
+a
+  display: flex
+  justify-content: center
+  align-items: baseline
+
+  margin-block: auto
+  gap: 2rem
+
+  text-transform: uppercase
+  font-size: clamp(1rem, 5vw, 5rem)
+
+  &::before
+    content: ''
+    display: block
+
+    height: 1cap
+    flex-grow: 1
+
+    background-image: repeating-linear-gradient(45deg, var(--secondary), var(--secondary) 20px, transparent 20px, transparent 40px)
+
+  &:hover, &:focus-visible
+    &::before
+      background-image: repeating-linear-gradient(45deg, var(--accent), var(--accent) 20px, transparent 20px, transparent 40px)
+
+  & .iconify
+    align-self: center
 </style>

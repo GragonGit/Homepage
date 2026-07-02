@@ -15,6 +15,7 @@ defineProps<{
 <style lang="sass" scoped>
 .image-container
   overflow: hidden
+  border: solid var(--border-s) var(--secondary)
 
   &:hover, &:focus-visible, &:focus-within
     & img
