@@ -120,6 +120,9 @@ h1
 nav
   margin: 3rem 0
   padding: 0
+  justify-self: center
+
+  width: clamp(5rem, 80lvw, 50rem)
 
   display: grid
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
