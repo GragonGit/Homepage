@@ -14,34 +14,45 @@ export const skillsFrontend: SkillCard[] = [
   { label: "Nuxt", url: "asd", icon: "devicon:nuxt", experience: "1.5 Years" },
   { label: "Vue", url: "asd", icon: "devicon:vuejs", experience: "1.5 Years" },
   { label: "Angular", url: "asd", icon: "devicon:angular", experience: "2 Years" },
-  { label: "HTML", url: "asd", icon: "devicon:html5", experience: "4 Years" },
-  { label: "TypeScript", url: "asd", icon: "devicon:typescript", experience: "4 Years" },
-  { label: "CSS", url: "asd", icon: "devicon:css3", experience: "4 Years" },
-  { label: "Figma", url: "asd", icon: "devicon:figma", experience: "1 Year" },
+  { label: "TailwindCSS", url: "asd", icon: "devicon:tailwindcss", experience: "2 Years" },
 ]
 
 export const skillsGames: SkillCard[] = [
   { label: "Unity", url: "asd", icon: "devicon:unity", experience: "3 Years" },
-  { label: "C#", url: "asd", icon: "devicon:csharp", experience: "3.5 Years" },
   { label: "Godot", url: "asd", icon: "devicon:godot", experience: "1 Year" },
-  { label: "Java", url: "asd", icon: "devicon:java", experience: "5 Years" },
-  { label: "Obsidian", url: "asd", icon: "skill-icons:obsidian-light", experience: "2 Years" },
+  { label: "Fabric", url: "asd", icon: "material-icon-theme:minecraft-fabric", experience: "2 Year" },
+  { label: "Gradle", url: "asd", icon: "devicon:gradle", experience: "2 Year" },
 ]
 
-export const skillsOther: SkillCard[] = [
+export const skillsLanguages: SkillCard[] = [
+  { label: "HTML", url: "asd", icon: "devicon:html5", experience: "4 Years" },
+  { label: "TypeScript", url: "asd", icon: "devicon:typescript", experience: "4 Years" },
+  { label: "JavaScript", url: "asd", icon: "devicon:javascript", experience: "4 Years" },
+  { label: "CSS", url: "asd", icon: "devicon:css3", experience: "4 Years" },
+  { label: "C#", url: "asd", icon: "devicon:csharp", experience: "3.5 Years" },
+  { label: "Java", url: "asd", icon: "devicon:java", experience: "5 Years" },
+]
+
+export const skillsTools: SkillCard[] = [
+  { label: "Figma", url: "asd", icon: "devicon:figma", experience: "1 Year" },
+  { label: "Obsidian", url: "asd", icon: "skill-icons:obsidian-light", experience: "2 Years" },
 ]
 
 export const skillGroups: SkillGroup[] = [
   {
-    name: "Frontend",
+    name: "Web Development",
     skills: skillsFrontend
   },
   {
-    name: "Games",
+    name: "Game Development",
     skills: skillsGames
   },
-  // {
-  //   name: "Other",
-  //   skills: skillsOther
-  // }
+  {
+    name: "Programming Languages",
+    skills: skillsLanguages
+  },
+  {
+    name: "Tools",
+    skills: skillsTools
+  },
 ]
