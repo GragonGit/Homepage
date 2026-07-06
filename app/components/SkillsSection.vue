@@ -2,10 +2,10 @@
 <section id="skills">
   <div class="content">
     <h2>Skills</h2>
-    <div class="skillGroup" v-for="group in skillGroups" :key="group.name">
+    <div v-for="group in skillGroupsFeatured" :key="group.name" class="skillGroup">
       <h3>{{ group.name }}</h3>
       <div class="skills">
-        <SkillCard v-bind="skill" v-for="skill in group.skills" :key="skill.label"/>
+        <SkillCard v-for="skill in group.skills" v-bind="skill" :key="skill.label"/>
       </div>
     </div>
   </div>

@@ -6,7 +6,7 @@
 
   <div class="skill-card__content">
     <h4 class="skill-card__label">{{ label }}</h4>
-    <span class="skill-card__experience">Experience: {{ experience }}</span>
+    <span class="skill-card__experience">Experience: {{ `${experienceYears} Year${experienceYears === 1 ? '' : 's'}` }}</span>
   </div>
 </NuxtLink>
 </template>
@@ -16,7 +16,7 @@ defineProps<{
   label: string;
   url: string;
   icon: string;
-  experience: string;
+  experienceYears: number;
 }>()
 </script>
 
