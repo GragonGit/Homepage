@@ -12,10 +12,6 @@
 </section>
 </template>
 
-<script lang="ts" setup>
-
-</script>
-
 <style lang="sass" scoped>
 section
   --primary: var(--theme-red)
