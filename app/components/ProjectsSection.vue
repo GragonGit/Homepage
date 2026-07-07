@@ -65,7 +65,7 @@ a
     align-self: center
 
 .iconify
-  animation: arrow-movement 2s ease-in-out infinite
+  animation: arrow-movement 4s ease-in-out infinite
 
 @keyframes arrow-movement
   0%, 100%
