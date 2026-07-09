@@ -8,6 +8,7 @@
         <SkillCard v-for="skill in group.skills" v-bind="skill" :key="skill.label"/>
       </div>
     </div>
+    <SkillCard class="moreSkills" v-bind="moreSkills" />
   </div>
 </section>
 </template>
@@ -35,4 +36,7 @@ h3
   display: grid
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
   gap: 1.5rem
+
+.moreSkills
+  margin-bottom: 5rem
 </style>

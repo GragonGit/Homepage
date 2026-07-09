@@ -67,7 +67,7 @@ export const moreSkills: SkillCard = { label: "More Skills", url: "", icon: "mdi
 export const skillGroupsFeatured: SkillGroup[] = [
   { name: "Web Development", skills: [nuxt, vue, angular].map(toSkillCard) },
   { name: "Game Development", skills: [unity, godot, blender].map(toSkillCard) },
-  { name: "Additional Skills", skills: [java, git].map(toSkillCard).concat(googleCloud, moreSkills) },
+  { name: "Additional Skills", skills: [java, git].map(toSkillCard).concat(googleCloud) },
 ]
 
 // ── Full skill list (dedicated /skills page) ──────
