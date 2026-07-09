@@ -11,7 +11,7 @@
     </div>
     <hr noshade>
     <div class="links">
-      <span>© {{ new Date().getFullYear() }} Gragon. All rights reserved.</span>
+      <span>© {{ new Date().getFullYear() }} Tristan. All rights reserved.</span>
       <nav>
         <NuxtLink v-for="link in legalNavigation" :key="link.url" :to="link.url">{{ link.label }}</NuxtLink>
       </nav>
@@ -42,17 +42,17 @@ footer
   & a
     font-size: 1rem
 
-.content
-  max-width: 60rem
-
 .links
   display: flex
+  flex-wrap: wrap
   justify-content: space-between
+  gap: 1.5rem 2rem
   
 nav
   display: flex
   flex-direction: row
-  gap: 1em
+  flex-wrap: wrap
+  gap: 1rem
 
   & > a
     text-transform: capitalize

@@ -14,11 +14,12 @@ header
   top: 0
   width: 100%
 
-  padding: 0.5rem
+  padding: clamp(0.25rem, 2vw, 0.5rem)
 
   display: flex
+  flex-wrap: wrap
   justify-content: flex-end
-  gap: 0.5em
+  gap: clamp(0.25em, 1.5vw, 0.5em)
 
   background-image: linear-gradient(180deg, var(--secondary) -300%, var(--transparent) 99%)
 
@@ -28,7 +29,7 @@ a
   border: solid var(--border-xs) var(--transparent)
   border-radius: 3em
 
-  font-size: 9pt
+  font-size: clamp(0.65rem, 2.2vw, 0.75rem)
   letter-spacing: 0.75px
   text-transform: uppercase
 
