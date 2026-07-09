@@ -70,7 +70,7 @@ section
   display: flex
   align-items: flex-start
 
-  font-size: 0.9rem
+  font-size: clamp(0.75rem, 2.5vw, 0.9rem)
   font-weight: 700
   text-transform: uppercase
   letter-spacing: 0.05em
@@ -80,7 +80,7 @@ section
   & > span
     padding-inline: 0.2rem
 
-    font-size: 0.7rem
+    font-size: clamp(0.6rem, 2vw, 0.7rem)
     color: var(--accent)
 
 .hero
@@ -111,17 +111,19 @@ h1
   border-width: var(--border-m) 0
 
   display: flex
+  flex-wrap: wrap
   justify-content: space-between
+  gap: 0.5em
 
-  font-size: 1.5rem
+  font-size: clamp(0.9rem, 4vw, 1.5rem)
   font-weight: 600
   text-transform: uppercase
 
 nav
-  margin: 3rem 0
+  margin: clamp(1.5rem, 6vw, 3rem) 0
   padding: 0
 
   display: grid
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
-  gap: 1.5rem
+  grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr))
+  gap: clamp(1rem, 4vw, 1.5rem)
 </style>
