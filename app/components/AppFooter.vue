@@ -40,7 +40,7 @@ footer
   background-color: var(--primary)
 
   & a
-    font-size: 1rem
+    font-size: clamp(0.7rem, 3vw, 1rem)
 
 .links
   display: flex
