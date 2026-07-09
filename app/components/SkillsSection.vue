@@ -5,7 +5,7 @@
     <div v-for="group in skillGroupsFeatured" :key="group.name" class="skillGroup">
       <h3>{{ group.name }}</h3>
       <div class="skills">
-        <SkillCard v-for="skill in group.skills" v-bind="skill" :key="skill.label"/>
+        <SkillCard v-for="skill in group.skills" v-bind="skill" :key="skill.label" />
       </div>
     </div>
     <SkillCard class="moreSkills" v-bind="moreSkills" />

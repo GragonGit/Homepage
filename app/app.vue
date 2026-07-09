@@ -1,5 +1,4 @@
 <template>
-<!-- <AppHeader /> -->
 <NuxtPage class="page" />
 <AppFooter />
 </template>
