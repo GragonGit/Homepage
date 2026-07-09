@@ -29,15 +29,15 @@ section
   display: grid
   grid-template-columns: repeat(auto-fit, minmax(min(600px, 100%), 1fr))
   align-items: start
-  gap: 4rem
-  margin-bottom: 3rem
+  gap: clamp(2rem, 6vw, 4rem)
+  margin-bottom: clamp(1.5rem, 5vw, 3rem)
 
 .content
   display: flex
   flex-direction: column
   flex-grow: 1
 
-  padding-bottom: 3rem
+  padding-bottom: clamp(1.5rem, 5vw, 3rem)
 
 a
   display: flex

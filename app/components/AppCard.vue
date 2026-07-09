@@ -60,7 +60,7 @@ a
 .label
   flex-shrink: 0
 
-  font-size: 1.5rem
+  font-size: clamp(1rem, 4vw, 1.5rem)
   font-weight: 600
   text-transform: uppercase
 

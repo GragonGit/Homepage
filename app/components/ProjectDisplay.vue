@@ -31,8 +31,10 @@ defineProps<{
   margin-top: auto
 
   display: flex
+  flex-wrap: wrap
   align-items: flex-end
   justify-content: space-between
+  gap: 1rem
 
   & a
     text-decoration: underline
@@ -40,7 +42,7 @@ defineProps<{
 
 .techstack
   display: grid
-  grid-template-columns: repeat(auto-fill, 8rem)
-  grid-auto-flow: column
+  grid-template-columns: repeat(auto-fill, minmax(min(8rem, 100%), 8rem))
   gap: 1rem
+  grid-auto-flow: column
 </style>
