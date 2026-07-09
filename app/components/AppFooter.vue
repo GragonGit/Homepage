@@ -47,6 +47,9 @@ footer
   flex-wrap: wrap
   justify-content: space-between
   gap: 1.5rem 2rem
+
+  & > span
+    font-size: clamp(0.5rem, 2vw, 1rem)
   
 nav
   display: flex
