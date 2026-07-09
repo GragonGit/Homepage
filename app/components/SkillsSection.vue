@@ -27,16 +27,16 @@ section
   justify-content: center
 
 .skillGroup
-  margin-bottom: 5rem
+  margin-bottom: clamp(2.5rem, 8vw, 5rem)
 
 h3
-  margin-block: 2rem
+  margin-block: clamp(1rem, 4vw, 2rem)
 
 .skills
   display: grid
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+  grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr))
   gap: 1.5rem
 
 .moreSkills
-  margin-bottom: 5rem
+  margin-bottom: clamp(2.5rem, 8vw, 5rem)
 </style>

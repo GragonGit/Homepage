@@ -32,7 +32,7 @@ const badgeStyle = computed(() =>
   display: flex
   align-items: center
 
-  padding: 1rem 1.25rem
+  padding: clamp(0.75rem, 3vw, 1rem) clamp(0.9rem, 4vw, 1.25rem)
 
   background-color: var(--secondary)
 
@@ -53,16 +53,16 @@ const badgeStyle = computed(() =>
     align-items: center
     justify-content: center
 
-    margin-right: 2rem
+    margin-right: clamp(1rem, 4vw, 2rem)
 
-    font-size: 4rem
+    font-size: clamp(2.25rem, 8vw, 4rem)
 
   &__content
     display: flex
     flex-direction: column
 
   &__label
-    font-size: 2rem
+    font-size: clamp(1.25rem, 5vw, 2rem)
     line-height: 1.2
     margin-block: 0.25rem
 
@@ -81,6 +81,6 @@ const badgeStyle = computed(() =>
       color: var(--accent)
 
   &__experience
-    font-size: 1.2rem
+    font-size: clamp(0.9rem, 3vw, 1.2rem)
     color: var(--accent)
 </style>
