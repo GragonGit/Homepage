@@ -38,6 +38,8 @@ const borderWithStyle = computed(() => ({
 
   background-color: var(--primary)
 
+  cursor: pointer
+
   &:hover, &:focus-within, &:focus-visible
     transform: translate(-4px, -4px)
     box-shadow: 4px 4px 0px 0px var(--accent)
