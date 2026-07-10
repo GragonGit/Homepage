@@ -24,6 +24,6 @@ export const socialNavigation: NavLink[] = [
 //TODO - Proper Links
 export const legalNavigation: NavLink[] = [
   { label: "Imprint", url: "/imprint" },
-  { label: "Privacy", url: "/privacy" },
-  { label: "Cookies", url: "/cookies" }
+  // { label: "Privacy", url: "/privacy" },
+  // { label: "Cookies", url: "/cookies" }
 ]
