@@ -1,14 +1,11 @@
 <template>
-<section id="about">
-  <div class="content">
-    <h2>About</h2>
-  </div>
-</section>
+  <section id="about">
+    <div class="content">
+      <h2>About</h2>
+      <AboutCard />
+    </div>
+  </section>
 </template>
-
-<script lang="ts" setup>
-
-</script>
 
 <style lang="sass" scoped>
 section
@@ -17,5 +14,7 @@ section
   display: flex
   flex-direction: column
   align-items: stretch
-  justify-content: center
+
+.content
+  max-width: 64rem
 </style>
