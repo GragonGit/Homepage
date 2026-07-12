@@ -1,5 +1,5 @@
 <template>
-<NuxtLink :to="url" class="skill-card" :style="badgeStyle">
+<NuxtLink :to="url" class="skill-card" target="_blank" :style="badgeStyle">
   <div class="skill-card__icon">
     <Icon :name="icon" />
   </div>
