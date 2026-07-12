@@ -55,17 +55,13 @@ const activeSection = computed(
   cursor: pointer
   font: inherit
 
-  &:hover
+  &:hover, &:focus-visible
     box-shadow: 4px 4px 0px 0px var(--secondary)
     transform: translate(-4px, -4px)
 
   &:active
     transform: translateY(1px)
     box-shadow: none
-
-  &:focus-visible
-    outline: var(--border-xs) solid var(--accent)
-    outline-offset: 3px
 
   &--active
     background: var(--accent)
