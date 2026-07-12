@@ -42,6 +42,9 @@ footer
   & a
     font-size: clamp(0.7rem, 3vw, 1rem)
 
+.content
+  max-width: 60rem
+
 .links
   display: flex
   flex-wrap: wrap
