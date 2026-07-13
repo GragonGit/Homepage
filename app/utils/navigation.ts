@@ -4,7 +4,7 @@ export interface NavLink {
   icon?: string
 }
 
-export const mainNavigation: NavLink[] = [
+export const heroNavigation: NavLink[] = [
   { label: "Projects", url: "/#projects", icon: "material-symbols:web-sharp" },
   // { label: "Games", url: "/#games", icon: "material-symbols:videogame-asset-sharp" },
   { label: "Skills", url: "/#skills", icon: "material-symbols:star-sharp" },
@@ -12,8 +12,9 @@ export const mainNavigation: NavLink[] = [
 ]
 
 export const footerMainNavigation: NavLink[] = [
-  { label: "Home", url: "/#hero" },
-  ...mainNavigation
+  { label: "Top", url: "/#hero" },
+  { label: "Projects", url: "/projects" },
+  { label: "Skills", url: "/skills" },
 ]
 
 export const socialNavigation: NavLink[] = [
