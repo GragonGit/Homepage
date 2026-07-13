@@ -27,7 +27,7 @@ section
 
 .featured-projects
   display: grid
-  grid-template-columns: repeat(auto-fit, minmax(min(600px, 100%), 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr))
   align-items: start
   gap: clamp(2rem, 6vw, 4rem)
   margin-bottom: clamp(1.5rem, 5vw, 3rem)

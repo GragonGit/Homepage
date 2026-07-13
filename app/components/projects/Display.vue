@@ -42,7 +42,7 @@ defineProps<{
 
 .techstack
   display: grid
-  grid-template-columns: repeat(auto-fill, minmax(min(8rem, 100%), 8rem))
+  grid-template-columns: repeat(auto-fill, minmax(2rem, 6rem))
   gap: 1rem
   grid-auto-flow: column
 </style>
