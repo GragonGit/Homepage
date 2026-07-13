@@ -22,6 +22,8 @@ const borderWithStyle = computed(() => ({
 
 <style lang="sass" scoped>
 .card
+  box-sizing: border-box
+
   position: relative
   aspect-ratio: 1
 
@@ -34,7 +36,7 @@ const borderWithStyle = computed(() => ({
   justify-content: stretch
   gap: 0.5rem
 
-  padding: clamp(0.5em, 2vw, 1.5em)
+  padding: clamp(0.1rem, 10%, 1.5rem)
 
   background-color: var(--primary)
 
