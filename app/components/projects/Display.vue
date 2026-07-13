@@ -1,6 +1,6 @@
 <template>
 <div class="project-display">
-  <ImageCard v-bind="image" />
+  <ProjectsImage v-bind="image" />
   <p>{{ description }}</p>
   <div class="display-footer">
     <div class="techstack">

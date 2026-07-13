@@ -3,7 +3,7 @@
   <div class="content">
     <h2>Projects</h2>
     <div class="featured-projects">
-      <ProjectDisplay v-for="project in featuredProjects" v-bind="project" :key="project.description" />
+      <ProjectsDisplay v-for="project in featuredProjects" v-bind="project" :key="project.description" />
     </div>
     <NuxtLink to="">Check out all Projects
       <Icon name="material-symbols:arrow-forward" />
