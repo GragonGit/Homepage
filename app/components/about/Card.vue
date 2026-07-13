@@ -10,21 +10,20 @@
     </button>
   </div>
 
-  <Transition name="panel-swap" mode="out-in">
-    <div :id="`panel-${activeSection.key}`" :key="activeSection.key" class="content-panel" role="tabpanel"
-      :aria-labelledby="`tab-${activeSection.key}`">
-      <AboutTimeline v-if="activeSection.type === 'timeline'" :entries="activeSection.entries ?? []" />
-      <AboutText v-else :content="activeSection.content ?? []" />
+  <div class="content-stack">
+    <div v-for="section in sections" :id="`panel-${section.key}`" :key="section.key" class="content-panel"
+      :class="{ 'content-panel--active': activeKey === section.key }" role="tabpanel"
+      :aria-labelledby="`tab-${section.key}`" :aria-hidden="activeKey !== section.key"
+      :inert="activeKey !== section.key">
+      <AboutTimeline v-if="section.type === 'timeline'" :entries="section.entries ?? []" />
+      <AboutText v-else :content="section.content ?? []" />
     </div>
-  </Transition>
+  </div>
 </div>
 </template>
 
 <script lang="ts" setup>
 const activeKey = ref(sections[0]!.key)
-const activeSection = computed(
-  () => sections.find((s) => s.key === activeKey.value) ?? sections[0]!
-)
 </script>
 
 <style lang="sass" scoped>
@@ -88,25 +87,24 @@ const activeSection = computed(
   text-transform: uppercase
   text-align: center
 
-// --- Content panel ---
+// --- Content stack ---
+.content-stack
+  display: grid
+
 .content-panel
-  min-height: 12rem
-
-// --- Panel transition ---
-.panel-swap-enter-active,
-.panel-swap-leave-active
-  transition: opacity 0.18s ease, transform 0.18s ease
-
-.panel-swap-enter-from
+  grid-area: 1 / 1
+  visibility: hidden
   opacity: 0
-  transform: translateY(6px)
+  transform: translateY(8px)
+  // transition: opacity 0.10s ease, transform 0.3s ease, visibility 0s linear 0.3s
 
-.panel-swap-leave-to
-  opacity: 0
-  transform: translateY(-6px)
+  &--active
+    visibility: visible
+    opacity: 1
+    transform: translateY(0)
+    // transition: opacity 0.2s ease, transform 0.3s ease, visibility 0s linear 0s
 
-@media (prefers-reduced-motion: reduce)
-  .panel-swap-enter-active,
-  .panel-swap-leave-active
+  @media (prefers-reduced-motion: reduce)
     transition: none
+    transform: none
 </style>
