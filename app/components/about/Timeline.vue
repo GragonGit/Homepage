@@ -38,11 +38,11 @@ defineProps<{
 .timeline
   display: flex
   flex-direction: column
-  gap: 1.75rem
 
 .entry
   border-left: var(--border-s) solid var(--secondary)
   padding-left: 1.5rem
+  margin-bottom: 1.75rem
 
 .entry__org
   margin: 0 0 0.9rem
