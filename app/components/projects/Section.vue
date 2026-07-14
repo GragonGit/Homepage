@@ -45,10 +45,10 @@ a
   align-items: baseline
 
   margin-block: auto
-  gap: 2rem
+  gap: 1rem
 
   text-transform: uppercase
-  font-size: clamp(1rem, 5vw, 5rem)
+  font-size: clamp(1rem, 6vw, 5rem)
 
   &::before
     content: ''
