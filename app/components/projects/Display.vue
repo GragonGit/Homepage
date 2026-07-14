@@ -2,12 +2,7 @@
 <div class="project-display">
   <ProjectsImage v-bind="image" />
   <p>{{ description }}</p>
-  <div class="display-footer">
-    <div class="techstack">
-      <AppCard v-for="tech in techStack" v-bind="tech" :key="tech.label" border-width="--border-s" />
-    </div>
-    <NuxtLink to="">Read More</NuxtLink>
-  </div>
+  <NuxtLink to="">Read More</NuxtLink>
 </div>
 </template>
 
@@ -27,22 +22,11 @@ defineProps<{
   flex-direction: column
   justify-content: center
 
-.display-footer
+a
   margin-top: auto
+  align-self: flex-start
 
-  display: flex
-  flex-wrap: wrap
-  align-items: flex-end
-  justify-content: space-between
-  gap: 1rem
+  text-decoration: underline
+  text-transform: uppercase
 
-  & a
-    text-decoration: underline
-    text-transform: uppercase
-
-.techstack
-  display: grid
-  grid-template-columns: repeat(auto-fill, minmax(2rem, 6rem))
-  gap: 1rem
-  grid-auto-flow: column
 </style>
