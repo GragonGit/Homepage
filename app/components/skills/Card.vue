@@ -1,5 +1,5 @@
 <template>
-<NuxtLink :to="url" class="skill-card" target="_blank" :style="badgeStyle">
+<NuxtLink :to="url" class="skill-card" :target :style="badgeStyle">
   <div class="skill-card__icon">
     <Icon :name="icon" />
   </div>
@@ -18,11 +18,14 @@ const props = defineProps<{
   icon: string
   subLabel: string
   badge?: string
+  sameTab?: boolean
 }>()
 
 const badgeStyle = computed(() =>
   props.badge ? { '--badgeContent': `"${props.badge}"` } : undefined
 )
+
+const target = computed(() => props.sameTab ? undefined : '_blank')
 </script>
 
 <style lang="sass" scoped>
