@@ -12,7 +12,7 @@ export const heroNavigation: NavLink[] = [
 ]
 
 export const footerMainNavigation: NavLink[] = [
-  { label: "Top", url: "/#hero" },
+  { label: "Home", url: "/" },
   { label: "Projects", url: "/projects" },
   { label: "Skills", url: "/skills" },
 ]
