@@ -65,13 +65,4 @@ a
 
   & .iconify
     align-self: center
-
-.iconify
-  animation: arrow-movement 4s ease-in-out infinite
-
-@keyframes arrow-movement
-  0%, 100%
-    transform: translateX(0)
-  50%
-    transform: translateX(-5px)
 </style>
