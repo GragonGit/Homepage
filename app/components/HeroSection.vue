@@ -35,7 +35,7 @@ const mouseStyle = computed(() => ({
 section
   position: relative
 
-  min-height: 100lvh
+  min-height: 100svh
 
   display: flex
   flex-direction: column
