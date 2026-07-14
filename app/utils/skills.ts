@@ -37,16 +37,20 @@ export const gradle: Skill = { label: "Gradle", url: "https://gradle.org", icon:
 export const unity: Skill = { label: "Unity", url: "https://unity.com", icon: "devicon:unity", experienceYears: 3 }
 
 // ── Programming Languages ─────────────────────────
+export const cpp: Skill = { label: "C++", url: "https://de.wikipedia.org/wiki/C%2B%2B", icon: "devicon:cplusplus", experienceYears: 1 }
 export const csharp: Skill = { label: "C#", url: "https://learn.microsoft.com/en-us/dotnet/csharp/", icon: "devicon:csharp", experienceYears: 3 }
 export const css: Skill = { label: "CSS", url: "https://developer.mozilla.org/en-US/docs/Web/CSS", icon: "devicon:css3", experienceYears: 4 }
 export const html: Skill = { label: "HTML", url: "https://developer.mozilla.org/en-US/docs/Web/HTML", icon: "devicon:html5", experienceYears: 4 }
 export const java: Skill = { label: "Java", url: "https://www.java.com", icon: "devicon:java", experienceYears: 5 }
 export const postgresql: Skill = { label: "PostgreSQL", url: "https://www.postgresql.org", icon: "devicon:postgresql", experienceYears: 2 }
+export const python: Skill = { label: "Python", url: "https://www.python.org", icon: "devicon:python", experienceYears: 1 }
 export const sass: Skill = { label: "SASS", url: "https://sass-lang.com", icon: "devicon:sass", experienceYears: 2 }
 export const tailwind: Skill = { label: "TailwindCSS", url: "https://tailwindcss.com", icon: "devicon:tailwindcss", experienceYears: 3 }
 export const typescript: Skill = { label: "TypeScript", url: "https://www.typescriptlang.org", icon: "devicon:typescript", experienceYears: 4 }
+export const javascript: Skill = { label: "JavaScript", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", icon: "devicon:javascript", experienceYears: 4 }
 
 // ── Tools ──────────────────────────────────────────
+export const arduino: Skill = { label: "Arduino", url: "https://www.arduino.cc", icon: "devicon:arduino", experienceYears: 1 }
 export const docker: Skill = { label: "Docker", url: "https://www.docker.com", icon: "devicon:docker", experienceYears: 3 }
 export const figma: Skill = { label: "Figma", url: "https://www.figma.com", icon: "devicon:figma", experienceYears: 1 }
 export const git: Skill = { label: "Git", url: "https://git-scm.com", icon: "devicon:git", experienceYears: 5 }
@@ -58,10 +62,11 @@ export const vscode: Skill = { label: "VSCode", url: "https://code.visualstudio.
 
 // ── Languages ──────────────────────────────────────
 export const german: SkillCard = { label: "German", url: "https://en.wikipedia.org/wiki/German_language", icon: "openmoji:flag-germany", subLabel: 'Native' }
-export const english: SkillCard = { label: "English", url: "https://en.wikipedia.org/wiki/English_language", icon: "openmoji:flag-england", subLabel: 'C1' }
+export const english: SkillCard = { label: "English", url: "https://en.wikipedia.org/wiki/English_language", icon: "openmoji:flag-united-kingdom", subLabel: 'C1' }
 
 
-export const moreSkills: SkillCard = { label: "More Skills", url: "", icon: "mdi:arrow-right-circle", subLabel: 'Click Here' }
+export const moreSkills: SkillCard = { label: "More Skills", url: "/skills", icon: "mdi:arrow-right-circle", subLabel: 'Click Here' }
+export const goBack: SkillCard = { label: "Go Back", url: "/", icon: "mdi:arrow-left-circle", subLabel: 'Click Here' }
 
 // ── Featured skills (home page) ───────────────────
 export const skillGroupsFeatured: SkillGroup[] = [
@@ -70,13 +75,65 @@ export const skillGroupsFeatured: SkillGroup[] = [
   { name: "Additional Skills", skills: [java, git].map(toSkillCard).concat(googleCloud) },
 ]
 
-// ── Full skill list (dedicated /skills page) ──────
-// export const skillGroupsFull: SkillGroup[] = [
-//   { name: "Programming Languages", skills: [] },
-//   { name: "Web Development", skills: [] },
-//   { name: "Tools", skills: [] },
-//   { name: "Game Development", skills: [] },
-// ]
+// ── Full skill list ──────
+export const skillGroupsFull: SkillGroup[] = [
+  {
+    name: "Programming Languages", skills: [
+      typescript,
+      javascript,
+      java,
+      csharp,
+      python,
+      cpp,
+      postgresql,
+    ].map(toSkillCard)
+  },
+  {
+    name: "Web Development", skills: [
+      vue,
+      nuxt,
+      angular,
+      tailwind,
+      css,
+      sass,
+      html,
+    ].map(toSkillCard)
+  },
+  {
+    name: "Tools", skills: [
+      git,
+      docker,
+      ghActions,
+      postman,
+      vscode,
+      figma,
+      markdown,
+      obsidian,
+      arduino,
+    ].map(toSkillCard)
+  },
+  {
+    name: "Cloud", skills: [
+      terraform,
+    ].map(toSkillCard).concat(googleCloud)
+  },
+  {
+    name: "Game Development", skills: [
+      unity,
+      godot,
+      blender,
+      aseprite,
+      fabric,
+      gradle,
+    ].map(toSkillCard)
+  },
+  {
+    name: "Languages", skills: [
+      german,
+      english,
+    ]
+  },
+]
 
 function formatExperience(years: number): string {
   return `Experience: ${years} Year${years === 1 ? '' : 's'}`
