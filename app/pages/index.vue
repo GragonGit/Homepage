@@ -3,7 +3,7 @@
   <HeroSection />
   <ProjectsSection />
   <!-- <GamesSection /> -->
-  <SkillsSection />
   <AboutSection />
+  <SkillsSection />
 </main>
 </template>

@@ -9,6 +9,8 @@
 
 <style lang="sass" scoped>
 section
+  border-bottom-color: var(--secondary)
+
   min-height: 100lvh
 
   display: flex
