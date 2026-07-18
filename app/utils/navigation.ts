@@ -9,6 +9,7 @@ export const heroNavigation: NavLink[] = [
   // { label: "Games", url: "/#games", icon: "material-symbols:videogame-asset-sharp" },
   { label: "About", url: "/#about", icon: "material-symbols:person-sharp" },
   { label: "Skills", url: "/#skills", icon: "material-symbols:star-sharp" },
+  { label: "Contact", url: "/#contact", icon: "material-symbols:mail" },
 ]
 
 export const footerMainNavigation: NavLink[] = [

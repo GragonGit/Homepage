@@ -1,5 +1,5 @@
 <template>
-<section id="games">
+<section id="contact">
   <div class="content">
     <h2>Contact</h2>
   </div>
