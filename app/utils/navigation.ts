@@ -18,12 +18,12 @@ export const footerMainNavigation: NavLink[] = [
   { label: "Skills", url: "/skills" },
 ]
 
-export const socialNavigation: NavLink[] = [
-  { label: "GitHub", url: "https://github.com/GragonGit" },
-  // { label: "LinkedIn", url: "https://linkedin.com/in/your-profile" }
+//TODO - Proper Links
+export const contactNavigation: NavLink[] = [
+  { label: "LinkedIn", url: "https://linkedin.com/in/your-profile", icon:"devicon-plain:linkedin" },
+  { label: "GitHub", url: "https://github.com/GragonGit", icon:"devicon:github" },
 ]
 
-//TODO - Proper Links
 export const legalNavigation: NavLink[] = [
   { label: "Imprint", url: "/imprint" },
   // { label: "Privacy", url: "/privacy" },

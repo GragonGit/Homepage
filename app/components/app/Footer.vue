@@ -6,7 +6,7 @@
         <NuxtLink v-for="link in footerMainNavigation" :key="link.url" :to="link.url">{{ link.label }}</NuxtLink>
       </nav>
       <nav>
-        <NuxtLink v-for="link in socialNavigation" :key="link.url" target="_blank" :to="link.url">{{ link.label }}</NuxtLink>
+        <NuxtLink v-for="link in contactNavigation" :key="link.url" target="_blank" :to="link.url">{{ link.label }}</NuxtLink>
       </nav>
     </div>
     <hr noshade>
