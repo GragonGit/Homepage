@@ -5,5 +5,6 @@
   <!-- <GamesSection /> -->
   <AboutSection />
   <SkillsSection />
+  <ContactSection />
 </main>
 </template>

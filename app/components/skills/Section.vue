@@ -19,8 +19,6 @@ section
   --secondary: var(--theme-white)
   --accent: var(--theme-black)
 
-  border-bottom-color: var(--secondary)
-
   min-height: 100lvh
   
   display: flex
