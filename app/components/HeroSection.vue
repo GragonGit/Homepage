@@ -42,6 +42,8 @@ section
   align-items: stretch
   justify-content: center
 
+  background-color: transparent
+
 .matrix-bg
   --bg-size: 40px
 
