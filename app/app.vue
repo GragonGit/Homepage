@@ -1,7 +1,8 @@
 <template>
+<AppNavbar />
 <NuxtPage class="page" />
 <AppFooter />
-<AppTop />
+<!-- <AppTop /> -->
 </template>
 
 <style lang="sass" scoped>
