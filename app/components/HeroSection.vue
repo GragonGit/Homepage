@@ -1,5 +1,5 @@
 <template>
-<section id="hero" @mousemove="updateMouseCoords" @mouseenter="isHovered = true" @mouseleave="isHovered = false">
+<section id="home" @mousemove="updateMouseCoords" @mouseenter="isHovered = true" @mouseleave="isHovered = false">
   <div class="matrix-bg" :style="mouseStyle" />
 
   <div class="hero content">

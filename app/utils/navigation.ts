@@ -12,15 +12,13 @@ export const heroNavigation: NavLink[] = [
   { label: "Contact", url: "/#contact", icon: "material-symbols:mail" },
 ]
 
-export const headerNavigation: NavLink[] = [
-  { label: "Hero", url: "/#hero", icon: "material-symbols:home" },
+export const navbarNavigation: NavLink[] = [
+  { label: "Home", url: "/#home", icon: "material-symbols:home" },
   ...heroNavigation
 ]
 
 export const footerMainNavigation: NavLink[] = [
-  { label: "Home", url: "/" },
-  { label: "Projects", url: "/projects" },
-  { label: "Skills", url: "/skills" },
+  ...navbarNavigation
 ]
 
 //TODO - Proper Links

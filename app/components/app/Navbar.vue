@@ -2,7 +2,7 @@
   <Transition name="fade">
   <template v-if="isVisible">
       <nav class="nav-container">
-        <button v-for="nav in headerNavigation" :key="nav.label" class="app-top">
+        <button v-for="nav in navbarNavigation" :key="nav.label" class="app-top">
           <AppCard v-bind="nav" label="" border-width="--border-s" />
         </button>
       </nav>
