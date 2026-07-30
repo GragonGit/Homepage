@@ -62,17 +62,19 @@ export const vscode: Skill = { label: "VSCode", url: "https://code.visualstudio.
 
 // ── Languages ──────────────────────────────────────
 export const german: SkillCard = { label: "German", url: "https://en.wikipedia.org/wiki/German_language", icon: "openmoji:flag-germany", subLabel: 'Native' }
-export const english: SkillCard = { label: "English", url: "https://en.wikipedia.org/wiki/English_language", icon: "openmoji:flag-united-kingdom", subLabel: 'C1' }
+export const english: SkillCard = { label: "English", url: "https://en.wikipedia.org/wiki/English_language", icon: "openmoji:flag-united-kingdom", subLabel: 'C1', badge: 'Certified' }
 
 
+// ── Navigation ──────────────────────────────────────
 export const moreSkills: SkillCard = { label: "More Skills", url: "/skills", icon: "mdi:arrow-right-circle", subLabel: 'Click Here' }
 export const goBack: SkillCard = { label: "Go Back", url: "/", icon: "mdi:arrow-left-circle", subLabel: 'Click Here' }
 
 // ── Featured skills (home page) ───────────────────
 export const skillGroupsFeatured: SkillGroup[] = [
-  { name: "Web Development", skills: [nuxt, vue, angular].map(toSkillCard) },
-  { name: "Game Development", skills: [unity, godot, blender].map(toSkillCard) },
+  { name: "Frameworks", skills: [nuxt, vue, angular].map(toSkillCard) },
+  { name: "Code", skills: [html, typescript, javascript, sass, tailwind].map(toSkillCard) },
   { name: "Additional Skills", skills: [java, git].map(toSkillCard).concat(googleCloud) },
+  { name: "Languages", skills: [german, english] },
 ]
 
 // ── Full skill list ──────
@@ -135,6 +137,8 @@ export const skillGroupsFull: SkillGroup[] = [
   },
 ]
 
+
+// ── Utils ──────
 function formatExperience(years: number): string {
   return `Experience: ${years} Year${years === 1 ? '' : 's'}`
 }

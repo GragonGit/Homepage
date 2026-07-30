@@ -4,7 +4,7 @@
 
   <div class="hero content">
     <h1>Tristan</h1>
-    <div id="subheader"><span>Game & Software Engineer</span> <span>Germany</span></div>
+    <div id="subheader"><span>Web Developer & Software Engineer</span> <span>Germany</span></div>
     <nav>
       <AppCard v-for="link in heroNavigation" :key="link.label" v-bind="link" />
     </nav>
