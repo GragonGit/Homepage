@@ -5,9 +5,9 @@
     <div class="featured-projects">
       <ProjectsDisplay v-for="project in featuredProjects" v-bind="project" :key="project.description" />
     </div>
-    <NuxtLink to="">Check out all Projects
+    <!-- <NuxtLink to="">Check out all Projects
       <Icon name="material-symbols:arrow-forward" />
-    </NuxtLink>
+    </NuxtLink> -->
   </div>
 </section>
 </template>

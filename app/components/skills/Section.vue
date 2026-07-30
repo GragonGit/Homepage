@@ -8,7 +8,7 @@
         <SkillsCard v-for="skill in group.skills" v-bind="skill" :key="skill.label" />
       </div>
     </div>
-    <SkillsCard class="moreSkills" v-bind="moreSkills" :same-tab="true" />
+    <!-- <SkillsCard class="moreSkills" v-bind="moreSkills" :same-tab="true" /> -->
   </div>
 </section>
 </template>
