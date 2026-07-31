@@ -90,6 +90,7 @@ const activeKey = ref(sections[0]!.key)
 // --- Content stack ---
 .content-stack
   display: grid
+  margin-bottom: 3rem
 
 .content-panel
   grid-area: 1 / 1
