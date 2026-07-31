@@ -28,7 +28,7 @@ export const contactNavigation: NavLink[] = [
 ]
 
 export const legalNavigation: NavLink[] = [
-  { label: "Imprint", url: "/imprint" },
+  { label: "Imprint", url: "https://gragongit.github.io/Info/" },
   // { label: "Privacy", url: "/privacy" },
   // { label: "Cookies", url: "/cookies" }
 ]

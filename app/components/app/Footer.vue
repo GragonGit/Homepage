@@ -13,7 +13,7 @@
     <div class="links">
       <span>© {{ new Date().getFullYear() }} Tristan. All rights reserved.</span>
       <nav>
-        <NuxtLink v-for="link in legalNavigation" :key="link.url" :to="link.url">{{ link.label }}</NuxtLink>
+        <NuxtLink v-for="link in legalNavigation" :key="link.url" :to="link.url" target="_blank">{{ link.label }}</NuxtLink>
       </nav>
     </div>
   </div>
