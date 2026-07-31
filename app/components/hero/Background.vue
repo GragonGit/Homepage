@@ -1,5 +1,5 @@
 <template>
-  <div class="matrix-bg" :style="mouseStyle" />
+  <div class="bg" :style="mouseStyle" />
 </template>
 
 <script lang="ts" setup>
@@ -30,27 +30,23 @@ onUnmounted(() => {
 const mouseStyle = computed(() => ({
   '--mouse-x': `${mouseX.value}px`,
   '--mouse-y': `${mouseY.value}px`,
-  '--mask-opacity': isHovered.value ? '0.2' : '0'
+  '--mask-opacity': isHovered.value ? '0.01' : '0.01'
 }))
 </script>
 
 <style lang="sass" scoped>
-.matrix-bg
-  --bg-size: 40px
-
+.bg
   position: absolute
   inset: 0
   pointer-events: none
 
-  background: radial-gradient(circle, transparent 5px, var(--primary) 5px), linear-gradient(90deg, var(--secondary) 2px, transparent 2px), linear-gradient(0deg, var(--secondary) 2px, transparent 2px)
-  background-position: calc( calc( var(--bg-size) / 2 ) + 1px ) calc( calc( var(--bg-size) / 2 ) - 1px ), 0 0, 0 0
-  background-size: var(--bg-size) var(--bg-size)
+  background: repeating-linear-gradient(45deg, var(--secondary), var(--secondary) 10px, transparent 10px, transparent 20px)
 
   opacity: var(--mask-opacity, 0)
   transition: opacity 0.3s ease
 
-  mask-image: radial-gradient(circle 100px at var(--mouse-x) var(--mouse-y), black 10%, #0002 100%)
-  -webkit-mask-image: radial-gradient(circle 100px at var(--mouse-x) var(--mouse-y), black 10%, #0002 100%)
+  // mask-image: radial-gradient(circle 100px at var(--mouse-x) var(--mouse-y), black 10%, #0002 100%)
+  // -webkit-mask-image: radial-gradient(circle 100px at var(--mouse-x) var(--mouse-y), black 10%, #0002 100%)
 
   z-index: -10
 </style>

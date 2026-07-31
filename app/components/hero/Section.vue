@@ -1,6 +1,6 @@
 <template>
 <section id="home">
-  <HeroBackground />
+  <!-- <HeroBackground /> -->
   <div class="hero content">
     <h1>Tristan</h1>
     <div id="subheader"><span>Web Developer & Software Engineer</span> <span>Germany</span></div>
