@@ -43,7 +43,7 @@ const borderWithStyle = computed(() => ({
 
   cursor: pointer
 
-  &:hover, &:focus-within, &:focus-visible, &.is-active
+  &:hover, &:focus-visible, &:has(a:focus-visible), &.is-active
     transform: translate(-4px, -4px)
     box-shadow: 4px 4px 0px 0px var(--secondary)
 
