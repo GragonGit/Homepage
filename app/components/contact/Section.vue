@@ -2,19 +2,20 @@
 <section id="contact">
   <div class="content">
     <h2>Contact</h2>
-    <p><b>I'd love to hear from you!</b></p>
-    <p>Just reach out to <a href="mailto:test">example@mail.com</a>.</p>
-    <p>Or hit me up on my socials:</p>
-    <div class="socials">
-      <AppCard v-for="link in contactNavigation" :key="link.label" v-bind="link" />
+    <div class="contact">
+      <div class="information">
+        <p><b>I'd love to hear from you!</b></p>
+        <p>Just reach out to <a href="mailto:test">example@mail.com</a>.</p>
+        <p>Or hit me up on my socials:</p>
+        <div class="socials">
+          <AppCard v-for="link in contactNavigation" :key="link.label" v-bind="link" />
+        </div>
+      </div>
+      <NuxtImg src="images/contact/website_qr.svg" alt="Website Link QR Code" loading="lazy" />
     </div>
   </div>
 </section>
 </template>
-
-<script lang="ts" setup>
-
-</script>
 
 <style lang="sass" scoped>
 section
@@ -28,6 +29,18 @@ section
 b
   font-size: 1.2em
 
+.contact
+  display: grid
+  grid-template-columns: 2fr 1fr
+  justify-items: center
+  align-items: flex-end
+
+  @media (max-width: 640px)
+    grid-template-columns: 1fr
+
+.information
+  width: 100%
+
 .socials
   margin-block: clamp(1.5rem, 3vw, 2rem) clamp(2rem, 10vw, 4rem)
   padding: 0
@@ -35,4 +48,14 @@ b
   display: grid
   grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 10rem))
   gap: clamp(1rem, 4vw, 1.5rem)
+
+img
+  display: block
+
+  justify-self: flex-start
+
+  max-width: 360px
+  width: 100%
+
+  margin-bottom: clamp(2rem, 10vw, 4rem);
 </style>
