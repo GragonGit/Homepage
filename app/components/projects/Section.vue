@@ -17,8 +17,6 @@ section
   --primary: var(--theme-black)
   --secondary: var(--theme-white)
 
-  min-height: 100lvh
-
   display: flex
   flex-direction: column
   align-items: stretch

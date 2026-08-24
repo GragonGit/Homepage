@@ -19,8 +19,6 @@ section
   --secondary: var(--theme-white)
   --accent: var(--theme-black)
 
-  min-height: 100lvh
-  
   display: flex
   flex-direction: column
   align-items: stretch

@@ -11,8 +11,6 @@
 section
   border-bottom-color: var(--secondary)
 
-  min-height: 100lvh
-
   display: flex
   flex-direction: column
   align-items: stretch
