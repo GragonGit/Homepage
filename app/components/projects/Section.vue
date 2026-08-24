@@ -3,7 +3,16 @@
   <div class="content">
     <h2>Projects</h2>
     <div class="featured-projects">
-      <ProjectsDisplay v-for="project in featuredProjects" v-bind="project" :key="project.description" />
+      <ProjectsDisplay v-for="project in featuredProjects" :key="project.path" :to="project.path"
+        :description="project.description ?? ''" :image="{
+          src: project.cover,
+          alt: project.coverAlt ?? project.title,
+          sizes: '(min-width: 640px) 50vw, 100vw'
+        }" :tech-stack="(project.stack ?? []).map(tech => ({
+          label: tech.label,
+          icon: tech.icon,
+          url: tech.url ?? ''
+        }))" />
     </div>
     <!-- <NuxtLink to="">Check out all Projects
       <Icon name="material-symbols:arrow-forward" />
@@ -11,6 +20,15 @@
   </div>
 </section>
 </template>
+
+<script lang="ts" setup>
+const { data: featuredProjects } = await useAsyncData('featured-projects', () =>
+  queryCollection('projects')
+    .where('featured', '=', true)
+    .order('order', 'ASC')
+    .all()
+)
+</script>
 
 <style lang="sass" scoped>
 section
