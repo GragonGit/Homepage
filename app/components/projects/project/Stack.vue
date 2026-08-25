@@ -1,7 +1,7 @@
 <template>
 <section v-if="project.stack?.length" class="stack">
   <div class="content">
-    <h2>Built With</h2>
+    <h2>Technologies</h2>
     <div class="stack-grid">
       <AppCard v-for="tech in project.stack" :key="tech.label" :label="tech.label" :icon="tech.icon"
         :url="tech.url ?? route.path" />

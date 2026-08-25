@@ -24,8 +24,12 @@ const props = defineProps<{
 section
   border-bottom-color: var(--secondary)
 
+.content
+  justify-self: center
+  max-width: 60rem
+
 .overview
-  padding-block: clamp(3rem, 8vw, 5rem)
+  padding-block: 0 clamp(3rem, 8vw, 5rem)
 
 .prose
   :deep(h2)
