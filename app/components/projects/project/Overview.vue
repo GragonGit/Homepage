@@ -64,6 +64,7 @@ section
   display: grid
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr))
   gap: 1.5rem
+  align-items: center
   margin-top: clamp(2rem, 6vw, 3rem)
 
   figure
@@ -78,5 +79,5 @@ section
   img
     display: block
     width: 100%
-    object-fit: cover
+    object-fit: contain
 </style>
