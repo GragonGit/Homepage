@@ -8,7 +8,13 @@
         {{ prevProject.title }}
       </span>
     </NuxtLink>
-    <span v-else class="surround-spacer" />
+    <NuxtLink v-else to="/#projects" class="surround-link surround-prev">
+      <Icon name="mdi:arrow-left" />
+      <span>
+        <small>Go Back</small>
+        Projects
+      </span>
+    </NuxtLink>
 
     <NuxtLink v-if="nextProject" :to="nextProject.path" class="surround-link surround-next">
       <span>
@@ -17,7 +23,13 @@
       </span>
       <Icon name="mdi:arrow-right" />
     </NuxtLink>
-    <span v-else class="surround-spacer" />
+    <NuxtLink v-else to="/#contact" class="surround-link surround-next">
+      <span>
+        <small>Like what you see?</small>
+        Contact
+      </span>
+      <Icon name="mdi:arrow-right" />
+    </NuxtLink>
   </div>
 </section>
 </template>
@@ -75,9 +87,6 @@ const nextProject = computed(() => surround.value?.[1] ?? null)
 .surround-next
   justify-content: flex-end
   text-align: right
-
-.surround-spacer
-  background-color: var(--primary)
 
 @media (max-width: 40rem)
   .surround-grid
