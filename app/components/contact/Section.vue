@@ -11,7 +11,7 @@
           <AppCard v-for="link in contactNavigation" :key="link.label" v-bind="link" />
         </div>
       </div>
-      <NuxtImg src="images/contact/website_qr.svg" alt="Website Link QR Code" loading="lazy" />
+      <NuxtImg :src="resolvedSrc" alt="Website Link QR Code" loading="lazy" />
     </div>
   </div>
 </section>
@@ -20,6 +20,8 @@
 <script lang="ts" setup>
 const config = useRuntimeConfig()
 const contactNavigation = useContactNavigation()
+
+const resolvedSrc = computed(() => useAsset("/images/contact/website_qr.svg"))
 </script>
 
 <style lang="sass" scoped>
