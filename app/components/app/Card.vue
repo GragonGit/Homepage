@@ -1,5 +1,5 @@
 <template>
-<div class="card" :class="{ 'is-active': active }" :style="borderWithStyle">
+<div class="card" :class="{ 'is-active': active }" :style="borderWidthStyle">
   <Icon :name="icon ?? 'material-symbols:cookie'" />
   <NuxtLink :to="url" />
   <span v-if="label !== ''" class="label">{{ label }}</span>
@@ -16,7 +16,7 @@ const props = defineProps<{
   active?: boolean
 }>()
 
-const borderWithStyle = computed(() => ({
+const borderWidthStyle = computed(() => ({
   '--border-width': `var(${props.borderWidth ?? '--border-m'})`
 }))
 </script>
