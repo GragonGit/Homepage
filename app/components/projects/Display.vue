@@ -7,7 +7,7 @@
     <Card v-for="tech in techStack" :key="tech.label" v-bind="tech" border-width="--border-xs" />
   </div>
 
-  <NuxtLink :to="to">Read More</NuxtLink>
+  <NuxtLink :to="to">Learn More</NuxtLink>
 </div>
 </template>
 
