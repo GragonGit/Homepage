@@ -28,6 +28,13 @@ export default defineNuxtConfig({
     }
   },
 
+  runtimeConfig: {
+    public: {
+      contactEmail: '',
+      linkedinUrl: ''
+    }
+  },
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/icon',

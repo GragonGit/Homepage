@@ -21,12 +21,6 @@ export const footerMainNavigation: NavLink[] = [
   ...navbarNavigation
 ]
 
-//TODO - Proper Links
-export const contactNavigation: NavLink[] = [
-  { label: "LinkedIn", url: "https://linkedin.com/in/your-profile", icon:"devicon-plain:linkedin" },
-  { label: "GitHub", url: "https://github.com/GragonGit", icon:"devicon:github" },
-]
-
 export const legalNavigation: NavLink[] = [
   { label: "Imprint", url: "https://gragongit.github.io/Info/" },
   // { label: "Privacy", url: "/privacy" },

@@ -20,6 +20,10 @@
 </footer>
 </template>
 
+<script lang="ts" setup>
+const contactNavigation = useContactNavigation()
+</script>
+
 <style lang="sass" scoped>
 footer
   --primary: var(--theme-black)

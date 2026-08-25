@@ -5,7 +5,7 @@
     <div class="contact">
       <div class="information">
         <p><b>I'd love to hear from you!</b></p>
-        <p>Just reach out to <a href="mailto:test">example@mail.com</a>.</p>
+        <p>Just reach out to <a :href="'mailto:' + config.public.contactEmail">{{ config.public.contactEmail }}</a>.</p>
         <p>Or hit me up on my socials:</p>
         <div class="socials">
           <AppCard v-for="link in contactNavigation" :key="link.label" v-bind="link" />
@@ -16,6 +16,11 @@
   </div>
 </section>
 </template>
+
+<script lang="ts" setup>
+const config = useRuntimeConfig()
+const contactNavigation = useContactNavigation()
+</script>
 
 <style lang="sass" scoped>
 section
