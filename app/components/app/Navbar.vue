@@ -3,7 +3,8 @@
   <template v-if="isVisible">
       <nav class="nav-container">
         <button v-for="nav in navbarNavigation" :key="nav.label" class="app-top">
-          <AppCard v-bind="nav" label="" border-width="--border-s" :active="getSectionId(nav.url) === activeSection"/>
+          <AppCard v-bind="nav" label="" border-width="--border-s" />
+          <!-- <AppCard v-bind="nav" label="" border-width="--border-s" :active="getSectionId(nav.url) === activeSection"/> -->
         </button>
       </nav>
     </template>
