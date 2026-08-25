@@ -21,6 +21,9 @@ const props = defineProps<{
 </script>
 
 <style lang="sass" scoped>
+section
+  border-bottom-color: var(--secondary)
+
 .overview
   padding-block: clamp(3rem, 8vw, 5rem)
 
@@ -56,18 +59,13 @@ const props = defineProps<{
     margin: 0
     overflow: hidden
 
+    max-width: 30rem
+
     border: solid var(--secondary)
     border-width: var(--border-s)
-
-    transition: transform 0.15s ease, box-shadow 0.15s ease
-
-    &:hover, &:focus-within
-      transform: translate(-4px, -4px)
-      box-shadow: 4px 4px 0 0 var(--secondary)
 
   img
     display: block
     width: 100%
-    aspect-ratio: 4 / 3
     object-fit: cover
 </style>

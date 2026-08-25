@@ -3,7 +3,7 @@
   <div class="content">
     <h2>Built With</h2>
     <div class="stack-grid">
-      <Card v-for="tech in project.stack" :key="tech.label" :label="tech.label" :icon="tech.icon"
+      <AppCard v-for="tech in project.stack" :key="tech.label" :label="tech.label" :icon="tech.icon"
         :url="tech.url ?? route.path" />
     </div>
   </div>
@@ -21,9 +21,10 @@ const route = useRoute()
 </script>
 
 <style lang="sass" scoped>
-.stack
+section
   --primary: var(--theme-red)
   --secondary: var(--theme-white)
+  --accent: var(--theme-black)
 
   padding-block: clamp(3rem, 8vw, 5rem)
 
@@ -34,5 +35,9 @@ const route = useRoute()
   margin-top: 2rem
 
   .card
+    --primary: var(--theme-white)
+    --secondary: var(--theme-black)
+    --accent: var(--theme-red)
+
     max-width: 12rem
 </style>

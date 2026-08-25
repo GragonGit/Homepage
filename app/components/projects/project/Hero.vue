@@ -2,10 +2,10 @@
 <section class="hero">
   <div class="content">
     <div class="hero-nav">
-      <NuxtLink to="/" class="wordmark">Tristan</NuxtLink>
+      <!-- <NuxtLink to="/" class="wordmark">Tristan</NuxtLink> -->
       <NuxtLink to="/#projects" class="back-link">
         <Icon name="mdi:arrow-left" />
-        All Projects
+        Go Back
       </NuxtLink>
     </div>
 
@@ -163,11 +163,14 @@ const props = defineProps<{
 
 .cover-image
   display: block
+  max-width: 60rem
   width: 100%
   aspect-ratio: 16 / 9
   object-fit: cover
 
   margin-top: clamp(2rem, 6vw, 3rem)
+
+  justify-self: center
 
   border: solid var(--secondary)
   border-width: var(--border-s)

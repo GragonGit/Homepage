@@ -1,6 +1,6 @@
 <template>
 <section v-if="prevProject || nextProject" class="surround">
-  <div class="content surround-grid">
+  <div class="surround-grid">
     <NuxtLink v-if="prevProject" :to="prevProject.path" class="surround-link surround-prev">
       <Icon name="mdi:arrow-left" />
       <span>
@@ -17,6 +17,7 @@
       </span>
       <Icon name="mdi:arrow-right" />
     </NuxtLink>
+    <span v-else class="surround-spacer" />
   </div>
 </section>
 </template>
@@ -37,14 +38,10 @@ const nextProject = computed(() => surround.value?.[1] ?? null)
 </script>
 
 <style lang="sass" scoped>
-.surround
-  --primary: var(--theme-black)
-  --secondary: var(--theme-white)
-
 .surround-grid
   display: grid
   grid-template-columns: 1fr 1fr
-  gap: 1px
+  gap: var(--border-l)
   background-color: var(--secondary)
 
 .surround-link
