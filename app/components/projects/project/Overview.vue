@@ -7,7 +7,7 @@
           <h2 class="gallery-header">Gallery</h2>
           <div class="gallery">
             <figure v-for="image in project.gallery" :key="image.src">
-              <NuxtImg :src="image.src" :alt="image.alt ?? project.title" loading="lazy" />
+              <NuxtImg :src="useAsset(image.src)" :alt="image.alt ?? project.title" loading="lazy" />
             </figure>
           </div>
         </template>

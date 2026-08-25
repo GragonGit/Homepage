@@ -1,17 +1,19 @@
 <template>
 <div class="image-container">
-  <NuxtImg :src :alt format="webp" :sizes loading="lazy" class="base-img" />
+  <NuxtImg :src="resolvedSrc" :alt format="webp" :sizes loading="lazy" class="base-img" />
 
   <!-- <NuxtImg :src :alt format="webp" :sizes loading="lazy" class="filtered-img" aria-hidden="true" /> -->
 </div>
 </template>
 
 <script lang="ts" setup>
-defineProps<{
+const props = defineProps<{
   src: string
   alt: string
   sizes: string
 }>()
+
+const resolvedSrc = computed(() => useAsset(props.src))
 </script>
 
 <style lang="sass" scoped>

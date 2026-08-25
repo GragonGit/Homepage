@@ -32,7 +32,7 @@
       </a>
     </div>
 
-    <NuxtImg v-if="project.cover" :src="project.cover" :alt="project.coverAlt ?? project.title" class="cover-image" />
+    <NuxtImg v-if="project.cover" :src="useAsset(project.cover)" :alt="project.coverAlt ?? project.title" class="cover-image" />
   </div>
 </section>
 </template>
