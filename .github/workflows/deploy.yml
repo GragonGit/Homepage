@@ -1,7 +1,7 @@
-name: Deploy Kanban Board to GitHub Pages
+name: Deploy Homepage to GitHub Pages
 on:
   push:
-    branches: [homepage]
+    branches: [main]
     paths:
       - '**'
   workflow_dispatch:
