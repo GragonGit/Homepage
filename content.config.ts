@@ -42,7 +42,7 @@ export default defineContentConfig({
         })).optional(),
 
         // Whether the project should show up in the homepage grid
-        featured: z.boolean().default(true),
+        featured: z.boolean().default(false),
 
         // Manual sort order, used for the homepage grid and for the
         // "previous / next project" navigation on the detail page
