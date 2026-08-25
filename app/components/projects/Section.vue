@@ -7,7 +7,7 @@
         :description="project.description ?? ''" :image="{
           src: project.cover,
           alt: project.coverAlt ?? project.title,
-          sizes: '(min-width: 640px) 50vw, 100vw'
+          sizes: ''
         }" :tech-stack="(project.stack ?? []).map(tech => ({
           label: tech.label,
           icon: tech.icon,

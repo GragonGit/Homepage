@@ -3,11 +3,14 @@
       <div class="content">
         <ContentRenderer :value="project" class="prose" />
   
-        <div v-if="project.gallery?.length" class="gallery">
-          <figure v-for="image in project.gallery" :key="image.src">
-            <NuxtImg :src="image.src" :alt="image.alt ?? project.title" loading="lazy" />
-          </figure>
-        </div>
+        <template v-if="project.gallery?.length">
+          <h2 class="gallery-header">Gallery</h2>
+          <div class="gallery">
+            <figure v-for="image in project.gallery" :key="image.src">
+              <NuxtImg :src="image.src" :alt="image.alt ?? project.title" loading="lazy" />
+            </figure>
+          </div>
+        </template>
       </div>
     </section>
 </template>
@@ -52,6 +55,10 @@ section
     background-color: var(--theme-black)
     color: var(--theme-white)
     font-size: 0.85em
+
+.gallery-header
+  font-size: clamp(2rem, 6vw, 3rem)
+  margin-top: 1.75em
 
 .gallery
   display: grid
