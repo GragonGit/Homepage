@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: '2026-08-25',
   devtools: { enabled: true },
   css: ['~/assets/style/main.sass'],
   ssr: false,
@@ -10,6 +11,9 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: 'favicon.svg' },
+      ]
     }
   },
 
@@ -41,6 +45,10 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/content'
   ],
+
+  image: {
+    provider: 'none'
+  },
 
   content: {
     build: {
